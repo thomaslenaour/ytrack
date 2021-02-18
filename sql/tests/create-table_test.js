@@ -1,11 +1,4 @@
-import betterSqlite from 'better-sqlite3'
-
-export const tests = []
-const t = (f) => tests.push(f)
-
-const db = betterSqlite('chinook.db');
-
-const expected = [
+export const expected = [
   { PlaylistId: 1, Name: 'Music' },
   { PlaylistId: 2, Name: 'Movies' },
   { PlaylistId: 3, Name: 'TV Shows' },
@@ -25,9 +18,3 @@ const expected = [
   { PlaylistId: 17, Name: 'Heavy Metal Classic' },
   { PlaylistId: 18, Name: 'On-The-Go 1' }
 ]
-
-const rows = db.prepare('SELECT * FROM playlists').all()
-
-t(() => rows === expected)
-
-db.close()

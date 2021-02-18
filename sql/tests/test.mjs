@@ -2,6 +2,7 @@ import { join as joinPath, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { deepStrictEqual } from 'assert'
 import * as fs from 'fs'
+import betterSqlite3 from 'better-sqlite3'
 const { readFile, writeFile } = fs.promises
 
 global.window = global
@@ -63,42 +64,24 @@ const stackFmt = (err, url) => {
 }
 
 const main = async () => {
-  const [test, rawCode] = await Promise.all([
-    read(joinPath(root, `${name}_test.js`), 'test'),
-    read(`/jail/student/${name}.js`, 'student solution'),
+  const [rawCode] = await Promise.all([
+    read(`./${name}.sql`, 'student solution'),
   ])
 
-  // this is a very crude and basic removal of comments
-  // since checking code is only use to prevent cheating
-  // it's not that important if it doesn't work 100% of the time.
-  const code = rawCode.replace(/\/\*[\s\S]*?\*\/|\/\/.*/g, '').trim()
-  if (code.includes('import')) fatal('import keyword not allowed')
+  const db = betterSqlite3('./chinook.db')
 
-  const parts = test.split('// /*/ // ⚡')
-  const [inject, testCode] = parts.length < 2 ? ['', test] : parts
-  const combined = `${inject.trim()}\n${rawCode
-    .replace(inject.trim(), '')
-    .trim()}\n${testCode.trim()}\n`
+  const rows = db.prepare(rawCode).all()
 
-  const b64 = Buffer.from(combined).toString('base64')
-  const url = `data:text/javascript;base64,${b64}`
-  const { setup, tests } = await import(url).catch(err =>
-    fatal(`Unable to execute ${name} solution, error:\n${stackFmt(err, url)}`),
-  )
+  db.close()
 
-  const ctx = (await (setup && setup())) || {}
-  const tools = { eq, fail, wait, code, ctx }
-  for (const [i, t] of tests.entries()) {
-    try {
-      if (!await t(tools)) {
-        throw Error('Test failed')
-      }
-    } catch (err) {
-      console.log(`test #${i} failed:\n${t.toString()}\n\nError:`)
-      fatal(stackFmt(err, url))
-    }
-  }
-  console.log(`${name} passed (${tests.length} tests)`)
+  const { expected } = await import(joinPath(root, `${name}_test.js`)).catch((err) => {
+    fatal(`Unable to execute ${name} solution, error:\n${stackFmt(err)}`)
+  })
+
+  if (!eq(rows, expected)) {
+    console.log(`test #${i} failed:\n${t.toString()}\n\nError:`)
+    fatal(stackFmt(err))
+  } else console.log('yess')
 }
 
 main().catch(err => fatal(err.stack))
