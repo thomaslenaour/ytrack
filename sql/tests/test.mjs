@@ -69,7 +69,7 @@ const main = async () => {
     fatal(`Unable to execute ${exerciseName} solution, error:\n${stackFmt(err)}`)
   })
 
-  const db = sqlite3(joinPath(root, 'chinook.db'))
+  const db = sqlite3(joinPath(root, 'chinook-db.db'))
   let value = null
   
   if (isSelect) value = db.prepare(query).all()
