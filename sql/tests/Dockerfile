@@ -8,4 +8,4 @@ RUN npm install
 
 COPY . .
 
-ENTRYPOINT ["/app/entrypointt.sh"]
+ENTRYPOINT ["/app/entrypoint.sh"]
