@@ -62,14 +62,14 @@ const stackFmt = (err) => {
 }
 
 const main = async () => {
-  const query = await read(`/jail/student/${exerciseName}.sql`, 'student solution')
+  const query = (await read(`/jail/student${exerciseName}.sql`, 'student solution')).trim()
   const isSelect = query.split(' ')[0].toLowerCase() === 'select' ? true : false
 
   const { tests } = await import(joinPath(root, `${exerciseName}_test.js`)).catch((err) => {
     fatal(`Unable to execute ${exerciseName} solution, error:\n${stackFmt(err)}`)
   })
 
-  const db = sqlite3('./chinook.db')
+  const db = sqlite3(joinPath(root, 'chinook.db'))
   let value = null
   
   if (isSelect) value = db.prepare(query).all()
