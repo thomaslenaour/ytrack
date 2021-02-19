@@ -2,8 +2,8 @@ import { join as joinPath, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { deepStrictEqual } from 'assert'
 import * as fs from 'fs'
-import betterSqlite3 from 'better-sqlite3'
-const { readFile, writeFile } = fs.promises
+import sqlite3 from 'better-sqlite3'
+const { readFile } = fs.promises
 
 global.window = global
 global.fetch = (url) => {
@@ -20,8 +20,13 @@ global.fetch = (url) => {
   }
 }
 
-const wait = delay => new Promise(s => setTimeout(s, delay))
-const fail = fn => { try { fn() } catch (err) { return true } }
+const exerciseName = process.argv[2]
+
+const fatal = (...args) => {
+  console.error(...args)
+  process.exit(1)
+}
+
 const { join } = []
 const { split } = ''
 const eq = (a, b) => {
@@ -35,53 +40,53 @@ const eq = (a, b) => {
   return true
 }
 
-const name = process.argv[2]
-const fatal = (...args) => {
-  console.error(...args)
-  process.exit(1)
-}
-
-if (!name) fatal('missing exercise, usage:\nnode test exercise-name')
+if (!exerciseName) fatal('missing exercise, usage:\nnode test exercise-name')
 
 const ifNoEnt = fn => err => {
   if (err.code !== 'ENOENT') throw err
   fn(err)
 }
-
 const root = dirname(fileURLToPath(import.meta.url))
-const read = (filename, description) =>
-  readFile(filename, 'utf8').catch(
-    ifNoEnt(() => fatal(`Missing ${description} for ${name}`)),
-  )
 
-const stackFmt = (err, url) => {
+const read = (fileName, description) => readFile(fileName, 'utf8').catch(
+  ifNoEnt(() => fatal(`Missing ${description} for ${exerciseName}`)),
+)
+
+const stackFmt = (err) => {
   if (!(err instanceof Error)) {
     throw Error(`Unexpected type thrown: ${typeof err}. usage: throw Error('my message')`)
   }
   String.prototype.split = split
   Array.prototype.join = join
-  return err.stack.split(url).join(`${name}.js`)
+  return err.stack
 }
 
 const main = async () => {
-  const [rawCode] = await Promise.all([
-    read(`./${name}.sql`, 'student solution'),
-  ])
+  const query = await read(`/jail/student/${exerciseName}.sql`, 'student solution')
+  const isSelect = query.split(' ')[0].toLowerCase() === 'select' ? true : false
 
-  const db = betterSqlite3('./chinook.db')
-
-  const rows = db.prepare(rawCode).all()
-
-  db.close()
-
-  const { expected } = await import(joinPath(root, `${name}_test.js`)).catch((err) => {
-    fatal(`Unable to execute ${name} solution, error:\n${stackFmt(err)}`)
+  const { tests } = await import(joinPath(root, `${exerciseName}_test.js`)).catch((err) => {
+    fatal(`Unable to execute ${exerciseName} solution, error:\n${stackFmt(err)}`)
   })
 
-  if (!eq(rows, expected)) {
-    console.log(`test #${i} failed:\n${t.toString()}\n\nError:`)
-    fatal(stackFmt(err))
-  } else console.log('yess')
+  const db = sqlite3('./chinook.db')
+  let value = null
+  
+  if (isSelect) value = db.prepare(query).all()
+  else db.prepare(query).run()
+
+  const tools = { eq, db, value }
+  for (const [i, t] of tests.entries()) {
+    try {
+      if (!await t(tools)) {
+        throw Error('Test failed')
+      }
+    } catch (err) {
+      console.log(`test #${i} failed:\n${t.toString()}\n\nError:`)
+      fatal(stackFmt(err))
+    }
+  }
+  console.log(`${exerciseName} passed (${tests.length} tests)`)
 }
 
-main().catch(err => fatal(err.stack))
+main().catch((err) => fatal(err.stack))

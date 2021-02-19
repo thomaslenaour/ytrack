@@ -1,1 +1,0 @@
-SELECT LastName, FirstName FROM employees WHERE EmployeeId BETWEEN 5 AND 8
