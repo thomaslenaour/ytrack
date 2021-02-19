@@ -1,10 +1,8 @@
-## create-table-date
+## create-table
 
 ### Instructions
 
 Create a table into the chinook.db named as follow "students".
-The table must contain date-of-birth with type Date.
-
 
 ### Notions
 

@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Get the employee with the id 5.
+Get the LastName and FirstName as employeeid = 5 on employees table.
 
 ### Notions
 

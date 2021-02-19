@@ -1,8 +1,8 @@
-## select-where
+## select-distinct
 
 ### Instructions
 
-Get the employee with the id 5.
+Get all the distinct firstname in customers table.
 
 ### Notions
 
