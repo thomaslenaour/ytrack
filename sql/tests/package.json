@@ -2,7 +2,7 @@
   "name": "tests",
   "version": "1.0.0",
   "description": "",
-  "main": "test.mjs",
+  "main": "insert-data_test.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "better-sqlite3": "^7.1.2"
+    "sequelize": "^6.5.0",
+    "sqlite3": "^5.0.2"
   },
   "type": "module"
 }

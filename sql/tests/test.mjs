@@ -1,8 +1,8 @@
 import { join as joinPath, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { deepStrictEqual } from 'assert'
+import { Sequelize } from 'sequelize'
 import * as fs from 'fs'
-import sqlite3 from 'better-sqlite3'
 const { readFile } = fs.promises
 
 global.window = global
@@ -63,19 +63,20 @@ const stackFmt = (err) => {
 
 const main = async () => {
   const query = (await read(`/jail/student/${exerciseName}.sql`, 'student solution')).trim()
-  const isSelect = query.split(' ')[0].toLowerCase() === 'select' ? true : false
+
+  const db = new Sequelize('sqlite::memory:', {
+    dialect: 'sqlite',
+    storage: joinPath(root, 'chinook.db'),
+    logging: false
+  })
+
+  const [rows] = await db.query(query)
 
   const { tests } = await import(joinPath(root, `${exerciseName}_test.js`)).catch((err) => {
     fatal(`Unable to execute ${exerciseName} solution, error:\n${stackFmt(err)}`)
   })
 
-  const db = sqlite3(joinPath(root, 'chinook.db'), { readonly: false })
-  let value = null
-  
-  if (isSelect) value = db.prepare(query).all()
-  else db.prepare(query).run()
-
-  const tools = { eq, db, value }
+  const tools = { eq, db, rows }
   for (const [i, t] of tests.entries()) {
     try {
       if (!await t(tools)) {

@@ -1,7 +1,7 @@
 export const tests = []
 const t = (f) => tests.push(f)
 
-t(({ eq, value }) => eq(value ?? null, expected))
+t(({ eq, rows }) => eq(rows, expected))
 
 const expected = [
   {
