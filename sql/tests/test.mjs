@@ -1,7 +1,7 @@
 import { join as joinPath, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { deepStrictEqual } from 'assert'
-import { Sequelize } from 'sequelize'
+import Database from 'better-sqlite3'
 import * as fs from 'fs'
 const { readFile } = fs.promises
 
@@ -64,13 +64,17 @@ const stackFmt = (err) => {
 const main = async () => {
   const query = (await read(`/jail/student/${exerciseName}.sql`, 'student solution')).trim()
 
-  const db = new Sequelize('sqlite::memory:', {
-    dialect: 'sqlite',
-    storage: joinPath(root, 'chinook.db'),
-    logging: false
-  })
+  const db = new Database(':memory:')
 
-  const [rows] = await db.query(query)
+  const migration = fs.readFileSync(joinPath(root, `chinook.sql`), 'utf8')
+  db.exec(migration)
+
+  let rows = null
+  if (query.split(' ')[0] === 'SELECT') {
+    rows = db.prepare(query).all()
+  } else {
+    db.prepare(query).run()
+  }
 
   const { tests } = await import(joinPath(root, `${exerciseName}_test.js`)).catch((err) => {
     fatal(`Unable to execute ${exerciseName} solution, error:\n${stackFmt(err)}`)

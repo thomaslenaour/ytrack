@@ -9,9 +9,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
-    "sequelize": "^6.5.0",
-    "sqlite3": "^5.0.2"
-  },
-  "type": "module"
+    "better-sqlite3": "^7.1.2"
+  }
 }
