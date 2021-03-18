@@ -4,7 +4,7 @@
 
 Create a table `students` which contains 5 columns :
 
-`StudentId` with type Integer / auto-increment and primary key, not nullable
+`StudentId` with type Integer / auto-increment and primary key, not nullable  
 `FirstName` with type VARCHAR(80) / not nullable  
 `LastName` with type VARCHAR(80) / not nullable  
 `Birthday` with type DATE / not nullable  
