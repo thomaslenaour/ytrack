@@ -6,4 +6,4 @@ Rename the column `Total` to `TotalAmount` in the table `invoices`
 
 ### Notions
 
-- https://sqlite.org/lang_altertable.html
+- [sqlite.org/lang_altertable.html](https://sqlite.org/lang_altertable.html)
