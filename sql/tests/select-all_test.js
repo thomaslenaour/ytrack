@@ -3,7 +3,7 @@ const t = (f) => tests.push(f)
 
 t(({ eq, rows }) => eq(rows, expected))
 
-const expected = [ 
+const expected = [
   {
     EmployeeId: 1,
     LastName: 'Adams',

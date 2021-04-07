@@ -70,7 +70,7 @@ const main = async () => {
   db.exec(migration)
 
   let rows = null
-  if (query.split(' ')[0].toUpperCase() === 'SELECT') {
+  if (query.slice(0, 6).toUpperCase() === 'SELECT') {
     rows = db.prepare(query).all()
   } else {
     db.prepare(query).run()
