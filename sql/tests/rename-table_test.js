@@ -1,9 +1,9 @@
 export const tests = []
 const t = (f) => tests.push(f)
 
-t(({ eq, db }) => eq(
-  db.prepare(`PRAGMA table_info(songs)`).all(),
-  expected
+t(({ eq, db, sortObjectsInArray }) => eq(
+  sortObjectsInArray(db.prepare(`PRAGMA table_info(songs)`).all()),
+  sortObjectsInArray(expected)
 ))
 
 const expected = [

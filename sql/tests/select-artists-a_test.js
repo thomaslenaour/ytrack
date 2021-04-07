@@ -1,7 +1,7 @@
 export const tests = []
 const t = (f) => tests.push(f)
 
-t(({ eq, rows }) => eq(rows, expected))
+t(({ eq, rows, sortObjectsInArray }) => eq(rows, sortObjectsInArray(expected)))
 
 const expected = [
   { ArtistId: 1, Name: 'AC/DC' },

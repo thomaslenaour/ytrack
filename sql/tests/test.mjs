@@ -61,6 +61,15 @@ const stackFmt = (err) => {
   return err.stack
 }
 
+const sortObjectsInArray = (arr) => arr.map(v => Object.keys(v).sort().reduce(
+    (obj, key) => {
+      obj[key] = v[key]
+      return obj
+    },
+    {}
+  )
+)
+
 const main = async () => {
   const query = (await read(`/jail/student/${exerciseName}.sql`, 'student solution')).trim()
 
@@ -71,7 +80,7 @@ const main = async () => {
 
   let rows = null
   if (query.slice(0, 6).toUpperCase() === 'SELECT') {
-    rows = db.prepare(query).all()
+    rows = sortObjectsInArray(db.prepare(query).all())
   } else {
     db.prepare(query).run()
   }
@@ -80,7 +89,7 @@ const main = async () => {
     fatal(`Unable to execute ${exerciseName} solution, error:\n${stackFmt(err)}`)
   })
 
-  const tools = { eq, db, rows }
+  const tools = { eq, db, rows, sortObjectsInArray }
   for (const [i, t] of tests.entries()) {
     try {
       if (!await t(tools)) {
