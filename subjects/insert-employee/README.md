@@ -19,7 +19,7 @@ Insert a new employee in the table `employees` with these values :
 - `Fax` : +33 5 68 89 90 90
 - `Email` : john.doe@gmail.com
 
-Be careful with the dates. Dates should be in american format.
+Be careful with the dates. Dates must be in american format.
 
 ### Notions
 

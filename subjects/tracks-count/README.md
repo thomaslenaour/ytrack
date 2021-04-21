@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Select the name of the `playlists` and count the number of tracks which are in this playlist with alias `NumberOfTracks`.
+Select the `Name` of the `genres` and count the number of tracks which are associated with this genre with alias `NumberOfTracks`.
 
 ### Notions
 
