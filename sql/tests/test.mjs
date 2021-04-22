@@ -89,7 +89,7 @@ const main = async () => {
     fatal(`Unable to execute ${exerciseName} solution, error:\n${stackFmt(err)}`)
   })
 
-  const tools = { eq, db, rows, sortObjectsInArray }
+  const tools = { eq, db, rows, sortObjectsInArray, query }
   for (const [i, t] of tests.entries()) {
     try {
       if (!await t(tools)) {
