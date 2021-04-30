@@ -2,7 +2,8 @@
 
 ### Instructions
 
-Delete the genre `Reggae` from `genres` table.
+The music department wants to remove the genre `Reggae`.  
+You must make the request.
 
 ### Notions
 

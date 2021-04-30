@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Rename the column `Total` to `TotalAmount` in the table `invoices`
+Rename the column `Total` to `TotalAmount` in the table `invoices`.
 
 ### Notions
 

@@ -2,7 +2,7 @@
 
 ### Instructions
 
-You have to list all items names associated with invoice number **10** ordered by item name.
+You must list all items names associated with invoice number **10** ordered by item name.
 
 For each item :
 

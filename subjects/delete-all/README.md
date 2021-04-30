@@ -2,7 +2,8 @@
 
 ### Instructions
 
-Delete all data from `artists` table
+The music department wants to remove the all `artists`.  
+You must make the request.
 
 ### Notions
 

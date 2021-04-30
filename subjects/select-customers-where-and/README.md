@@ -2,7 +2,13 @@
 
 ### Instructions
 
-Select `FirstName` and `LastName` from all brazilians `customers` that come from `SP` state.
+A study is carried out on Brazilians who come from the state of São Paulo (`SP` in the database).
+
+Your role is to list the first name `FirstName` and last name `LastName` of all Brazilians customers who come from São Paulo (`SP`).
+
+### Expected result
+
+![Expected Result](./expected.png)
 
 ### Notions
 

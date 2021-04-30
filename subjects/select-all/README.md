@@ -2,7 +2,12 @@
 
 ### Instructions
 
-Get the list of all employees.
+Your company asks you to list all `employees`.  
+Make a query that will display all the data of all the employees.
+
+### Expected result
+
+![Expected Result](expected.png)
 
 ### Notions
 

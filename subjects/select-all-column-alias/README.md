@@ -2,11 +2,12 @@
 
 ### Instrutions
 
-Get all rows from table `tracks` only with this specific columns with aliases :
+Your company asks you to list certain employee information.  
+Make a query that will display the `EmployeeId` with alias `Identifiant`, the` LastName` with alias `Nom` and the`FirstName` with alias `Prenom` of all `employees`.
 
-- `EmployeeId` with alias `Identifiant`
-- `LastName` with alias `Nom`
-- `FirstName` with alias `Prenom`
+### Expected result
+
+![Expected Result](expected.png)
 
 ### Notions
 

@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Select `FirstName`, `LastName` and `City` from the `employees` table. You have to concatenate this columns and the render should be :
+Select `FirstName`, `LastName` and `City` from the `employees` table. You must concatenate this columns and the render should be :
 
 `FIRST_NAME LAST_NAME lives in CITY` with alias `Employee`
 

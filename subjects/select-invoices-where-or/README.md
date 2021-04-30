@@ -2,7 +2,13 @@
 
 ### Instructions
 
-Select `InvoiceId` and `Total` from `invoices` table where the billing city is `Paris` or `London`
+In order to perform statistics, the invoicing department needs to retrieve the invoice numbers `InvoiceId` and total prices `Total` of all invoices where the destination city is `Paris` or `London`.
+
+You must make this request.
+
+### Expected Result
+
+![Epected Result](./expected.png)
 
 ### Notions
 

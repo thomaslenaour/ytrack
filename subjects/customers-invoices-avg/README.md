@@ -4,7 +4,7 @@
 
 Make a join between the `invoices` and `cutomers` table.
 
-You have to select :
+You must select :
 
 - the customer first name `FirstName`
 - the customer last name `LastName`

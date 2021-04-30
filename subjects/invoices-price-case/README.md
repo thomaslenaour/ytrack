@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Select 100 first invoices with `InvoiceId` and `Total`. You have to make a condition with alias `CASE` :
+Select 100 first invoices with `InvoiceId` and `Total`. You must make a condition with alias `CASE` :
 
 - If the `Total` price is lower than 5$ then print `Price lower than 5$`
 - If the `Total` price is lower than 10$ then print `Price lower than 10$`

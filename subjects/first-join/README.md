@@ -4,7 +4,7 @@
 
 Make a join between the `artists` and `albums` table.
 
-You have to list 100 first rows with these informations :
+You must list 100 first rows with these informations :
 
 - the album title `Title` with alias `AlbumName`
 - the artist name `Name` with alias `ArtistName`

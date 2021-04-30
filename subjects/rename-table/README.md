@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Rename the table `tracks` to `songs`
+Rename the table `tracks` to `songs`.
 
 ### Notions
 

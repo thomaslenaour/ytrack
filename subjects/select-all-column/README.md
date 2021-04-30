@@ -2,11 +2,12 @@
 
 ### Instrutions
 
-Get all rows from table `employees` only with this specific columns :
+Your company asks you to list certain employee information.  
+Make a query that will display the `FirstName`, the` LastName` and the `Title` of all `employees`.
 
-- `FirstName`
-- `LastName`
-- `Title`
+### Expected result
+
+![Expected Result](expected.png)
 
 ### Notions
 

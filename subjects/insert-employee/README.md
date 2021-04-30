@@ -2,7 +2,9 @@
 
 ### Instructions
 
-Insert a new employee in the table `employees` with these values :
+A new `employee` has just joined the team. You must insert its information into the database.
+
+Here is the informations :
 
 - `LastName` : Doe
 - `FirstName` : John

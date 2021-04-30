@@ -2,7 +2,13 @@
 
 ### Instructions
 
-Select all columns from `customers` table where the customer is in `Microsoft Corporation` company.
+You must create a dashboard listing the company's customers. On this dashboard, there is a filter system allowing you to filter customers according to their `Company`. This is a very common feature.
+
+Your role is to write a request that will retrieve all the data of customers who are part of the company `Microsoft Corporation`.
+
+### Expected result
+
+![Expected Result](./expected.png)
 
 ### Notions
 

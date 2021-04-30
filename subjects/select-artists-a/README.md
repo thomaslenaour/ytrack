@@ -2,7 +2,13 @@
 
 ### Instructions
 
-Select all `artists` informations where the name begins with the letter `A`
+Your dashboard is equipped with a smart search system. As soon as you type the first letter of an artist, you get all the artists that start with that letter.
+
+You must create a query which will allow you to retrieve all the information of the artists whose name begins with the letter `A`.
+
+### Expected result
+
+![Expected Result](./expected.png)
 
 ### Notions
 

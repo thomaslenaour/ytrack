@@ -2,7 +2,8 @@
 
 ### Instructions
 
-Update the genre `Hip Hop/Rap` from table `genres` to `Rap`
+The music department wants to rename the genre `Hip Hop / Rap` to `Rap`.  
+You must make the request.
 
 ### Notions
 

@@ -2,7 +2,8 @@
 
 ### Instructions
 
-Insert a new genre in the table `genres` with the name `Electro`
+The music department asks you to add a new `genre` to the database.  
+Add a genre `Electro`.
 
 ### Notions
 

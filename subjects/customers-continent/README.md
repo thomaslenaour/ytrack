@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Select `FirstName`, `LastName`, `Country` of all customers. You have to make a condition with alias `Continent` according to the country.
+Select `FirstName`, `LastName`, `Country` of all customers. You must make a condition with alias `Continent` according to the country.
 
 Possible continents : `America`, `Asia`, `Europe`, `Oceania`
 

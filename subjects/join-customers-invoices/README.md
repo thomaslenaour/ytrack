@@ -4,7 +4,7 @@
 
 Make a join between the `customers` and `invoices` table.
 
-You have to list the information (below) of the customers who are part of a `Company` :
+You must list the information (below) of the customers who are part of a `Company` :
 
 - the customer first name `FirstName`
 - the customer last name `LastName`

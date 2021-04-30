@@ -4,7 +4,7 @@
 
 Make 2 joins between the `playlist_track`, `playlists` and `tracks` table.
 
-You have to list 100 first results (without duplicates) all tracks which are in the `TV Shows` playlists with :
+You must list 100 first results (without duplicates) all tracks which are in the `TV Shows` playlists with :
 
 - the track name `Name` with alias `TrackName`
 - the playlist name `Name` with alias `PlaylistName`
