@@ -11,6 +11,10 @@ You must list the information (below) of the customers who are part of a `Compan
 - the customer company name `Company`
 - the invoice total price of each invoice `Total` with alias `InvoiceTotalPrice`
 
+### Expected result
+
+![Expected Result](./expected.png)
+
 ### Notions
 
 - [sql.sh/cours/jointures](https://sql.sh/cours/jointures)

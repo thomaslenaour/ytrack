@@ -9,6 +9,10 @@ You must list 100 first results (without duplicates) all tracks which are in the
 - the track name `Name` with alias `TrackName`
 - the playlist name `Name` with alias `PlaylistName`
 
+### Expected result
+
+![Expected Result](./expected.png)
+
 ### Notions
 
 - [sql.sh/cours/jointures](https://sql.sh/cours/jointures)

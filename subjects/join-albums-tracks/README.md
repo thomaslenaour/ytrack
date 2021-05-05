@@ -12,6 +12,10 @@ You must list the first 50 results with :
 
 Results should be sorted in ascending order based on duration (`Milliseconds`).
 
+### Expected result
+
+![Expected Result](./expected.png)
+
 ### Notions
 
 - [sql.sh/cours/jointures](https://sql.sh/cours/jointures)

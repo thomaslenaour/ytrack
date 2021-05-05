@@ -11,6 +11,10 @@ You must list the 100 first rows with :
 
 You must use `LEFT JOIN` because an artist may or may not have an album.
 
+### Expected result
+
+![Expected Result](./expected.png)
+
 ### Notions
 
 - [sql.sh/cours/jointures](https://sql.sh/cours/jointures)

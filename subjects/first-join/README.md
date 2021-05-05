@@ -9,6 +9,10 @@ You must list 100 first rows with these informations :
 - the album title `Title` with alias `AlbumName`
 - the artist name `Name` with alias `ArtistName`
 
+### Expected result
+
+![Expected Result](./expected.png)
+
 ### Notions
 
 - [sql.sh/cours/jointures](https://sql.sh/cours/jointures)
