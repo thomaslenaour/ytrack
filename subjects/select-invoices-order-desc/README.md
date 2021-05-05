@@ -2,7 +2,13 @@
 
 ### Instructions
 
-List all `invoices` informations where the billing city is `Bordeaux`, `Paris` or `Stuttgart` and sort by decreasing `Total`.
+In order to carry out a statistical study, you must obtain information on all invoices where the destination country is: `Bordeaux`,` Paris` or `Stuttgart`
+
+The result must be ordered in descending order based on the `Total` price.
+
+### Expected result
+
+![Expected Result](./expected.png)
 
 ### Notions
 

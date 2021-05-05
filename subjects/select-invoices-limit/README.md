@@ -4,6 +4,10 @@
 
 List all informations of the last 15 `invoices` (the most recents). `InvoiceDate` corresponds to the invoice date.
 
+### Expected result
+
+![Expected Result](./expected.png)
+
 ### Notions
 
 - [sql.sh/cours/limit](https://sql.sh/cours/limit)

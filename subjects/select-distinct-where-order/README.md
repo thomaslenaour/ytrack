@@ -4,6 +4,10 @@
 
 List the `Name` of `playlists` (without duplicates) where the `Name` begins by the letter `M`. Sort the result in alphabetical order.
 
+### Expected result
+
+![Expected Result](./expected.png)
+
 ### Notions
 
 - [sql.sh/cours/where/like](https://sql.sh/cours/where/like)

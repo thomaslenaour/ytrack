@@ -2,7 +2,13 @@
 
 ### Instructions
 
-Select all informations from `invoices` table where there is no `BillingCity` and no `BillingPostalCode` and where the `Total` price is greater than 10.
+The department responsible for invoicing asks you for information on certain invoices.
+
+Find all informations of all the invoices which do not have a `BillingState` and no` BillingPostalCode` and where the `Total` price is greater than 10.
+
+### Expected result
+
+![Expected Result](./expected.png)
 
 ### Notions
 

@@ -2,7 +2,16 @@
 
 ### Instructions
 
-Select the `Name` and the duration `Milliseconds` of `AC/DC` tracks. The result should be ordered by milliseconds.
+Make a query that will select for each `tracks` of the composer `AC/DC`:
+
+- the `Name`
+- the time `Milliseconds`
+
+The results should be sorted in ascending order according to the duration in `Milliseconds`
+
+### Expected result
+
+![Expected Result](./expected.png)
 
 ### Notions
 
