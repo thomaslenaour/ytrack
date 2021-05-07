@@ -2,9 +2,22 @@
 
 ### Instructions
 
-Select `EmployeeId`, `LastName`, `FirstName`, `HireDate` (with alias `HireFrenchDate`) columns from `employees` table. You must format `HireDate` in a French format. The result must be ordered by `HireDate` in ascending order.
+In SQL, it is possible to format a date.
 
-**French format : 15/04/2021** (day/month/year)
+Select `employees` information with these columns :
+
+- `EmployeeId`
+- `LastName`
+- `FirstName`
+- `HireDate` with alias `HireFrenchDate`
+
+The `HireFrenchDate` must be formatted in french format.
+
+**French format : 15/04/2020** (day/month/year)
+
+### Expected result
+
+![Expected Result](./expected.png)
 
 ### Notions
 

@@ -6,6 +6,10 @@ Select `LastName` and `FirstName` of all customers where the length of first nam
 The `LastName` must be in uppercase with alias `LastNameUpper`.  
 The result should be ordered by `LastName` in descending order.
 
+### Expected result
+
+![Expected Result](./expected.png)
+
 ### Notions
 
 - [sql.sh/cours/where](https://sql.sh/cours/where)

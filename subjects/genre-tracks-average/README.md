@@ -2,8 +2,16 @@
 
 ### Instructions
 
-Select the `Name` of the `genres` and the average of tracks duration which are associated with this genre with alias `AverageDuration`.  
-The result must be ordered by `AverageDuration` in descending order.
+In order to have statistics, you have to calculate the average time of the `tracks` of each `genre`.
+
+To do this, write a query that will retrieve:
+
+- the genre `Name`
+- Alias `AverageDuration` which represents the average duration of all tracks associated with the genre
+
+### Expected result
+
+![Expected Result](./expected.png)
 
 ### Notions
 

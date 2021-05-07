@@ -4,6 +4,10 @@
 
 Select the `Name` of all artists who has made at least 4 albums ordered by name in descending order.
 
+### Expected result
+
+![Expected Result](./expected.png)
+
 ### Notions
 
 - [sql.sh/cours/group-by](https://sql.sh/cours/group-by)

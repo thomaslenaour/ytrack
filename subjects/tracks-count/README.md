@@ -2,7 +2,11 @@
 
 ### Instructions
 
-Select the `Name` of the `genres` and count the number of tracks which are associated with this genre with alias `NumberOfTracks`.
+The production team tries to count the number of `tracks` associated with each `genre`. You must perform a query which will retrieve the `Name` of each genre as well as the number of `tracks` associated with this genre with the alias `NumberOfTracks`
+
+### Expected result
+
+![Expected Result](./expected.png)
 
 ### Notions
 
