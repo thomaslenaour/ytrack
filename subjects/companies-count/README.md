@@ -2,7 +2,11 @@
 
 ### Instructions
 
-Select the number of customers who are part of a company with alias `NbCompanies`.
+Count the number of customers who have a `Company` with the alias `NbCompanies`.
+
+### Expected result
+
+![Expected Result](./expected.png)
 
 ### Notions
 

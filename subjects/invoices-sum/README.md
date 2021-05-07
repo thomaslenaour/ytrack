@@ -2,7 +2,11 @@
 
 ### Instructions
 
-Select the sum of the total price of all invoices from the customer `Tim Goyer` with alias `AllInvoicesTotalPrice`.
+You have to get invoices information about invoices from client `Tim Goyer`. You must calculate the total sum of all his invoices with an alias `AllInvoicesTotalPrice`.
+
+### Expected result
+
+![Expected Result](./expected.png)
 
 ### Notions
 

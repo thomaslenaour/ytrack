@@ -2,13 +2,17 @@
 
 ### Instructions
 
-You must list all items names associated with invoice number **10** ordered by item name.
+You must retrieve information on the products purchased during the invoice which has the identifier **10**.
 
-For each item :
+Collect :
 
 - the invoice number `InvoiceId`
 - the name of the item (track) with alias `InvoiceItem`
 - the `UnitPrice` of each item
+
+### Expected result
+
+![Expected Result](./expected.png)
 
 ### Notions
 

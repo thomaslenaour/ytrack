@@ -2,7 +2,11 @@
 
 ### Instructions
 
-Select the minimum duration and the maximum duration of all `tracks` with respective aliases `MinTrack` and `MaxTrack`.
+Select the tracks with the minimum and maximum duration with the respective aliases `MinTrack` and `MaxTrack` using appropriate SQL functions.
+
+### Expected result
+
+![Expected Result](./expected.png)
 
 ### Notions
 

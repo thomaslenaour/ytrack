@@ -2,13 +2,17 @@
 
 ### Instructions
 
-Select `FirstName`, `LastName` and `City` from the `employees` table. You must concatenate this columns and the render should be :
+You must concatenate several columns between them. To do this, get the `FirstName`,` LastName` and `City` information of all employees with the alias` Employee`, all concatenated like the example below.
 
-`FIRST_NAME LAST_NAME lives in CITY` with alias `Employee`
+`[FIRST_NAME] [LAST_NAME] lives in [CITY]`
 
 Exemple :
 
 `Calvin Sea Phanh lives in Bordeaux`
+
+### Expected result
+
+![Expected Result](./expected.png)
 
 ### Notions
 

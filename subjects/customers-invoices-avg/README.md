@@ -2,15 +2,15 @@
 
 ### Instructions
 
-Make a join between the `invoices` and `cutomers` table.
+You must carry out a statistical study on all the customers as well as their invoices.
 
-You must select :
-
-- the customer first name `FirstName`
-- the customer last name `LastName`
-- the average price of all invoices associated with the customer with alias `InvoicesAverage`
+You must select, the `FirstName` and the `LastName` of each customer, as well as the average total price of all their respective invoices with the alias `InvoicesAverage`.
 
 Take a look at the `GROUP BY` clause.
+
+### Expected result
+
+![Expected Result](./expected.png)
 
 ### Notions
 
