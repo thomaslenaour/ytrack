@@ -1,4 +1,4 @@
-## artist-bytes
+## artists-bytes
 
 ### Instructions
 
