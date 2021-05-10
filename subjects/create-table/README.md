@@ -1,5 +1,13 @@
 ## create-table
 
+## Welcome!
+
+Welcome to the SQL Pool. The idea of this pool is to introduce you to SQL by manipulating a database. In order to realize, you can download the database [here](https://github.com/thomaslenaour/ytrack/blob/main/sql/tests/db/chinook.db). Once this is done, you can download software such as TablePlus for example to perform your SQL queries.
+
+Good luck !
+
+[Download the database](https://github.com/thomaslenaour/ytrack/blob/main/sql/tests/db/chinook.db)
+
 ### Instructions
 
 Create a table `students` which contains in order 5 columns :
