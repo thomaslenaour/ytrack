@@ -6,6 +6,10 @@ Select the `FirstName` and the `LastName` (with alias `FullName` which represent
 
 You must list these informations only if the sum of all their invoices is greater than 38 €.
 
+### Expected result
+
+![Expected Result](./expected.png)
+
 ### Notions
 
 - [sql.sh/fonctions/upper](https://sql.sh/fonctions/upper)
