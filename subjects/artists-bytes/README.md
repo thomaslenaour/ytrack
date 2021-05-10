@@ -14,7 +14,7 @@ In order, list:
 
 ### Expected result
 
-![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/artist-bytes/expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/artists-bytes/expected.png)
 
 ### Notions
 
