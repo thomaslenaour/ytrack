@@ -8,6 +8,10 @@ There are SQL subqueries to resolve this problem. The idea is to make a request 
 
 Select the `Name` of the products purchased on the last invoice using a subquery.
 
+### Expected result
+
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/invoices-items-last/expected.png)
+
 ### Notions
 
 - [sql.sh/cours/jointures/inner-join](https://sql.sh/cours/jointures/inner-join)

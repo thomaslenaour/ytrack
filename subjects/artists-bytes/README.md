@@ -12,6 +12,10 @@ In order, list:
 - the track name with alias `TrackName`
 - the size of the track in megabytes (rounded to 2 decimal and formatted like this: `15.65 MB`) with alias `MegaBytes`
 
+### Expected result
+
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/artist-bytes/expected.png)
+
 ### Notions
 
 - [sql.sh/cours/jointures/inner-join](https://sql.sh/cours/jointures/inner-join)

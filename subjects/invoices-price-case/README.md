@@ -8,6 +8,10 @@ Select 100 first invoices with `InvoiceId` and `Total`. You must make a conditio
 - If the `Total` price is lower than 10$ then print `Price lower than 10$`
 - If the `Total` price is greater than 10$ then print `Price greater than 10$`
 
+### Expected result
+
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/invoices-price-case/expected.png)
+
 ### Notions
 
 - [sql.sh/cours/case](https://sql.sh/cours/case)

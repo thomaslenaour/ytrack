@@ -13,6 +13,10 @@ You must also add an alias `IsBigOrder` which will vary depending on the number 
 
 The results should be sorted by invoice number in ascending order.
 
+### Expected result
+
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/is-big-order/expected.png)
+
 ### Notions
 
 - [sql.sh/cours/jointures/inner-join](https://sql.sh/cours/jointures/inner-join)

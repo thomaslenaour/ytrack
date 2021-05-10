@@ -11,6 +11,10 @@ You also need to add an `IsProductive` alias which will vary depending on the nu
 - If `NbAlbums` > 1 and `NbAlbums` < 10 then print `Productive`
 - If `NbAlbums` > 10 then print `Very Productive`
 
+### Expected result
+
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/artist-albums-case/expected.png)
+
 ### Notions
 
 - [sql.sh/fonctions](https://sql.sh/fonctions)
