@@ -8,7 +8,7 @@ You must make this request.
 
 ### Expected Result
 
-![Epected Result](./expected.png)
+![Epected Result](https://thomaslenaour.github.io/ytrack/subjects/select-invoices-where-or/expected.png)
 
 ### Notions
 

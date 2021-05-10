@@ -8,7 +8,7 @@ You must create a query which will allow you to retrieve all the information of 
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/select-artists-a/expected.png)
 
 ### Notions
 

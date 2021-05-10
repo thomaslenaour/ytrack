@@ -13,7 +13,7 @@ You must use `LEFT JOIN` because an artist may or may not have an album.
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/left-join/expected.png)
 
 ### Notions
 

@@ -8,7 +8,7 @@ Your role is to list the first name `FirstName` and last name `LastName` of all 
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/select-customers-where-and/expected.png)
 
 ### Notions
 

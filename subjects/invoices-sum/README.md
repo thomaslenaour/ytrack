@@ -6,7 +6,7 @@ You have to get invoices information about invoices from client `Tim Goyer`. You
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/invoices-sum/expected.png)
 
 ### Notions
 

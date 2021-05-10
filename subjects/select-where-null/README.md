@@ -8,7 +8,7 @@ Find all informations of all the invoices which do not have a `BillingState` and
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/select-where-null/expected.png)
 
 ### Notions
 

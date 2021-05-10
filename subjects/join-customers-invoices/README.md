@@ -13,7 +13,7 @@ You must list the information (below) of the customers who are part of a `Compan
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/join-customers-invoices/expected.png)
 
 ### Notions
 

@@ -11,7 +11,7 @@ To do this, write a query that will retrieve:
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/genre-tracks-average/expected.png)
 
 ### Notions
 

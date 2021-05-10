@@ -6,7 +6,7 @@ List all informations of the last 15 `invoices` (the most recents). `InvoiceDate
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/select-invoices-limit/expected.png)
 
 ### Notions
 

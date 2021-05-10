@@ -8,7 +8,7 @@ The result must be ordered by `NumberOfCustomers` in ascending order.
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/support-count-customers/expected.png)
 
 ### Notions
 

@@ -14,7 +14,7 @@ Results should be sorted in ascending order based on duration (`Milliseconds`).
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/join-albums-tracks/expected.png)
 
 ### Notions
 

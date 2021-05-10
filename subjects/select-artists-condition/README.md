@@ -6,7 +6,7 @@ Select the `Name` of all artists who has made at least 4 albums ordered by name 
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/select-artists-condition/expected.png)
 
 ### Notions
 

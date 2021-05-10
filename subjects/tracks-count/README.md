@@ -6,7 +6,7 @@ The production team tries to count the number of `tracks` associated with each `
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/tracks-count/expected.png)
 
 ### Notions
 

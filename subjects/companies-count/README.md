@@ -6,7 +6,7 @@ Count the number of customers who have a `Company` with the alias `NbCompanies`.
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/companies-count/expected.png)
 
 ### Notions
 

@@ -7,7 +7,7 @@ Make a query that will display the `FirstName`, the` LastName` and the `Title` o
 
 ### Expected result
 
-![Expected Result](expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/select-all-column/expected.png)
 
 ### Notions
 

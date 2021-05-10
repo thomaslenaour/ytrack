@@ -7,7 +7,7 @@ Make a query that will display the `EmployeeId` with alias `Identifiant`, the` L
 
 ### Expected result
 
-![Expected Result](expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/select-all-column-alias/expected.png)
 
 ### Notions
 

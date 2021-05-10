@@ -8,7 +8,7 @@ Your role is to write a request that will retrieve all the data of customers who
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/select-customer-where/expected.png)
 
 ### Notions
 

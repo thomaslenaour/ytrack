@@ -6,7 +6,7 @@ List the `Name` of `playlists` (without duplicates) where the `Name` begins by t
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/select-distinct-where-order/expected.png)
 
 ### Notions
 

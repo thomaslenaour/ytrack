@@ -6,7 +6,7 @@ Select the `FirstName` and `LastName` of each employee and you must calculate th
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/approximate-age/expected.png)
 
 ### Notions
 

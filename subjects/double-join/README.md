@@ -11,7 +11,7 @@ You must list 100 first results (without duplicates) all tracks which are in the
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/double-join/expected.png)
 
 ### Notions
 

@@ -11,7 +11,7 @@ You must list 100 first rows with these informations :
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/first-join/expected.png)
 
 ### Notions
 

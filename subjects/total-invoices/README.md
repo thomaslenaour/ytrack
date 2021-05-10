@@ -8,7 +8,7 @@ You must list these informations only if the sum of all their invoices is greate
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/total-invoices/expected.png)
 
 ### Notions
 

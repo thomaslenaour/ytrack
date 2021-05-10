@@ -12,7 +12,7 @@ Exemple :
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/concat-employee/expected.png)
 
 ### Notions
 

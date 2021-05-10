@@ -11,7 +11,7 @@ The results should be sorted in ascending order according to the duration in `Mi
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/select-tracks-order-by/expected.png)
 
 ### Notions
 

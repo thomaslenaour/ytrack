@@ -8,7 +8,7 @@ The result must be ordered in descending order based on the `Total` price.
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/select-invoices-order-desc/expected.png)
 
 ### Notions
 

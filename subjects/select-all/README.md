@@ -7,7 +7,7 @@ Make a query that will display all the data of all the employees.
 
 ### Expected result
 
-![Expected Result](expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/select-all/expected.png)
 
 ### Notions
 

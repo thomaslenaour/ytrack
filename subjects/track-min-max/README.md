@@ -6,7 +6,7 @@ Select the tracks with the minimum and maximum duration with the respective alia
 
 ### Expected result
 
-![Expected Result](./expected.png)
+![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/track-min-max/expected.png)
 
 ### Notions
 
