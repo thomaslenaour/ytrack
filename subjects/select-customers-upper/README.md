@@ -4,7 +4,7 @@
 
 Select `LastName` and `FirstName` of all customers where the length of first name and last name is greater than 5 characters.  
 The `LastName` must be in uppercase with alias `LastNameUpper`.  
-The result should be ordered by `LastName` in descending order.
+The result should be ordered by `LastName` in ascending order.
 
 ### Expected result
 

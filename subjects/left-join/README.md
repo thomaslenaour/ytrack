@@ -7,7 +7,7 @@ Make a **left join** between the `artists` and `albums` table.
 You must list the 100 first rows with :
 
 - the artist name `Name`
-- the album name `Title` with alias `AlbumName`
+- the album name `Title` with alias `AlbumTitle`
 
 You must use `LEFT JOIN` because an artist may or may not have an album.
 
