@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Select the `FirstName` and `LastName` of each employee and you must calculate their approxmate ages with alias `ApproximateAge`.
+Select the `FirstName` and `LastName` of each employee and you must calculate their approximate ages on their hire date with alias `ApproximateAge`.
 
 ### Expected result
 
