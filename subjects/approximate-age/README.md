@@ -10,4 +10,5 @@ Select the `FirstName` and `LastName` of each employee and you must calculate th
 
 ### Notions
 
-- [sql.sh/cours/create-table](https://sql.sh/cours/create-table)
+- [sqlite.org/lang_datefunc.html](https://www.sqlite.org/lang_datefunc.html)
+- [sql.sh/cours/order-by](https://sql.sh/cours/order-by)
