@@ -11,6 +11,8 @@ You must also add an alias `IsBigOrder` which will vary depending on the number 
 - If the number of items is equal or less than 10 then print `Normal Order`
 - If the number of items is greater than 10 then print `Big Order`
 
+**For this exercise, you must do a subquery !**
+
 The results should be sorted by invoice number in ascending order.
 
 ### Expected result
