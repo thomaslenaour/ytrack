@@ -9,6 +9,8 @@ To do this, write a query that will retrieve:
 - the genre `Name`
 - Alias `AverageDuration` which represents the average duration of all tracks associated with the genre
 
+You must order results by `AverageDuration` in descending order.
+
 ### Expected result
 
 ![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/genre-tracks-average/expected.png)
