@@ -12,4 +12,5 @@ Your role is to write a request that will retrieve all the data of customers who
 
 ### Notions
 
+- [sql.sh/cours/select](https://sql.sh/cours/select)
 - [sql.sh/cours/where](https://sql.sh/cours/where)
