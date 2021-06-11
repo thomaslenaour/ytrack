@@ -18,3 +18,4 @@ You must list 100 first rows with these informations :
 - [sql.sh/cours/jointures](https://sql.sh/cours/jointures)
 - [sql.sh/cours/jointures/inner-join](https://sql.sh/cours/jointures/inner-join)
 - [sql.sh/cours/limit](https://sql.sh/cours/limit)
+- [sql.sh/cours/alias](https://sql.sh/cours/alias)
