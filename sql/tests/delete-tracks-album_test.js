@@ -8,7 +8,7 @@ t(({ eq, db }) => eq(db.prepare(
   FROM
     tracks
   WHERE
-    AlbumId BETWEEN 80 AND 200 AND Composer IS NULL`
+    AlbumId = 7`
 ).all(), []))
 
 Object.freeze(tests)
