@@ -6,6 +6,8 @@ Select the `FirstName` and the `LastName` (with alias `FullName` which represent
 
 You must list these informations only if the sum of all their invoices is greater than 38 €.
 
+You must order result by name in ascending order.
+
 ### Expected result
 
 ![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/total-invoices/expected.png)

@@ -6,10 +6,13 @@ Welcome to the SQL Pool. The idea of this pool is to introduce you to SQL by man
 
 Good luck !
 
+**For each exercise, if you need to modify the database (with an `UPDATE` / `INSERT` / `CREATE`... query), you must download again the database to have the good version.**
+
 [Download the database](https://github.com/thomaslenaour/ytrack/blob/main/sql/tests/db/chinook.db)
 
 ### Instructions
 
+Create a file `create-table.sql` in which you must write your SQL query.
 Create a table `students` which contains in order 5 columns :
 
 - `StudentId` with type `INTEGER` / auto-increment and primary key, not nullable

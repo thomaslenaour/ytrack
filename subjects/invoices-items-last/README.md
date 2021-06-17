@@ -17,3 +17,4 @@ Select the `Name` of the products purchased on the last invoice using a subquery
 - [sql.sh/cours/jointures/inner-join](https://sql.sh/cours/jointures/inner-join)
 - [sql.sh/cours/sous-requete](https://sql.sh/cours/sous-requete)
 - [sql.sh/cours/where](https://sql.sh/cours/where)
+- [sql.sh/cours/limit](https://sql.sh/cours/limit)

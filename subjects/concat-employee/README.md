@@ -10,6 +10,8 @@ Exemple :
 
 `Calvin Sea Phanh lives in Bordeaux`
 
+Be careful with the TabePlus autocompletion, you can't use `"`.
+
 ### Expected result
 
 ![Expected Result](https://thomaslenaour.github.io/ytrack/subjects/concat-employee/expected.png)

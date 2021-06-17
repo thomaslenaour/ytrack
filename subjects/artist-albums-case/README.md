@@ -9,7 +9,7 @@ You also need to add an `IsProductive` alias which will vary depending on the nu
 
 - If `NbAlbums` = 1 then print `Unproductive`
 - If `NbAlbums` > 1 and `NbAlbums` < 10 then print `Productive`
-- If `NbAlbums` > 10 then print `Very Productive`
+- If `NbAlbums` >= 10 then print `Very Productive`
 
 ### Expected result
 

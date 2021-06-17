@@ -9,7 +9,7 @@ Here is the informations :
 - `LastName` : Doe
 - `FirstName` : John
 - `Title` : IT Developer
-- `ReportsTo` : His superior is Michael Mithell
+- `ReportsTo` : His superior is Michael Mithell (the `id` of the employee)
 - `BirthDate` : 1999-03-18 00:00:00
 - `HireDate` : 2020-03-18 00:00:00
 - `Address` : 142 rue Sainte-Catherine
