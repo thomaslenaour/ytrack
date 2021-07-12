@@ -9,7 +9,7 @@ namespace tests
         [TestMethod]
         public void setPiValue_RandomFloat_OK()
         {
-            Assert.AreEqual(3.14159f, SetPiValue_Exercice.setPiValue(0));
+            Assert.AreEqual(3.14159f, SetPiValue_Exercice.SetPiValue(0));
         }
     }
 }
