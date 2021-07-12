@@ -31,7 +31,7 @@ namespace TestCSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CSharpDiscovery.Quest01.SetPiValue_Exercice.SetPiValue());
+            Console.WriteLine(CSharpDiscovery.Quest01.SetPiValue_Exercice.SetPiValue(0));
         }
     }
 }
@@ -41,6 +41,6 @@ And its output :
 
 ```
 $ dotnet run
-3.14159f
+3.14159
 $
 ```
