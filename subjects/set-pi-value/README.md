@@ -9,7 +9,7 @@ namespace CSharpDiscovery.Quest01
 {
     public class SetPiValue_Exercice
     {
-        public static bool SetPiValue(float pi)
+        public static float SetPiValue(float pi)
         {
             // Your code
         }
