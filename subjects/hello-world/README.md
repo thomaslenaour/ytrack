@@ -5,13 +5,16 @@ https://dotnet.microsoft.com/download
 
 Create a repository named `piscine-csharp-discovery`
 
-Once created, clone this repo, then go to `CSharpDiscovery/CSharpDiscovery` and run this command:
+Once created, clone this repo, then get in the folder and run this command:
 
 ```sh
 dotnet new console
 ```
 
-This will create two files, including a file named `Program.cs`. This file will be used to let you test your functions. Use :
+This will create two files, including a file named `Program.cs`. This file will be used to let you test your functions. 
+Once this is done, rename `piscine-csharp-discovery` to `CSharpDiscovery.csproj` and make sure that line 6 of the file equals to `<RootNamespace>CSharpDiscovery</RootNamespace>`.
+
+If you want to test your code, use :
 
 ```sh
 dotnet run
