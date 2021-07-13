@@ -10,7 +10,7 @@ namespace tests
         public void SpellItBackward_HelloWorld_HelloWorldReversed()
         {
             //"helloworld" reçu, on retourne "dlrowolleh"
-            Assert.AreEqual("dlrowolleh", SpellItBackward_Exercice.SpellItBackward("helloworld"), "La méthode doit retourner \"dlrowolleh\" pour \"helloworld\" en entrée");
+            Assert.AreEqual("dlrowolleh", SpellItBackwards_Exercice.SpellItBackward("helloworld"), "La méthode doit retourner \"dlrowolleh\" pour \"helloworld\" en entrée");
         }
     }
 }
