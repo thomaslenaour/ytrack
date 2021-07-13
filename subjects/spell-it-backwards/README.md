@@ -1,6 +1,6 @@
 # Instructions
 
-Write a function `SpellItBackwards` that returns the `string` passed as parameter in reverse.
+Write a function `SpellItBackward` that returns the `string` passed as parameter in reverse.
 
 # Expected Functions
 

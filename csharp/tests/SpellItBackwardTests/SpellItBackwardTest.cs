@@ -1,4 +1,4 @@
-﻿using student.Quest01;
+﻿using CSharpDiscovery.Quest01;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace tests
