@@ -13,7 +13,7 @@ namespace CSharpDiscovery.Quest01
 {
     public class NextTrafficLightColor_Exercice
     {
-        public static TrafficLightColor NextTrafficLightColor(TrafficLightColor currentColor)
+        public static TrafficLightColor GetNextTrafficLightColor(TrafficLightColor currentColor)
         {
             // Your code
         }
@@ -36,9 +36,9 @@ namespace TestCSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(NextTrafficLightColor_Exercice.NextTrafficLightColor(TrafficLightColor.Red));
-            Console.WriteLine(NextTrafficLightColor_Exercice.NextTrafficLightColor(TrafficLightColor.Orange));
-            Console.WriteLine(NextTrafficLightColor_Exercice.NextTrafficLightColor(TrafficLightColor.None));
+            Console.WriteLine(NextTrafficLightColor_Exercice.GetNextTrafficLightColor(TrafficLightColor.Red));
+            Console.WriteLine(NextTrafficLightColor_Exercice.GetNextTrafficLightColor(TrafficLightColor.Orange));
+            Console.WriteLine(NextTrafficLightColor_Exercice.GetNextTrafficLightColor(TrafficLightColor.None));
         }
     }
 }
