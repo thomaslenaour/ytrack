@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace tests
 {
     [TestClass]
-    public class SpellItBackwardTests
+    public class SpellItBackwardsTests
     {
         [TestMethod]
         public void SpellItBackward_HelloWorld_HelloWorldReversed()
