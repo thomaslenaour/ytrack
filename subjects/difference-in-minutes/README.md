@@ -1,6 +1,6 @@
 # Instructions
 
-Write a function `DifferenceInMinutes` that returns the number of seconds between 2 DateTime passed as parameters
+Write a function `DifferenceInMinutes` that returns the number of minutes between 2 DateTime passed as parameters
 
 # Expected Functions
 
