@@ -9,7 +9,7 @@ namespace CSharpDiscovery.Quest01
 {
     public class BeginsWithSpecificCharacter_Exercice
     {
-        public static bool BeginsWithSpecificCharacter(string str, string begin)
+        public static bool BeginsWithSpecificCharacter(string str, char begin)
         {
            // Your code
         }
@@ -31,8 +31,8 @@ namespace TestCSharp
     {
         static void Main(string[] str)
         {
-            Console.WriteLine(BeginsWithSpecificCharacter_Exercice.BeginsWithSpecificCharacter("helloworld", "h"));
-            Console.WriteLine(BeginsWithSpecificCharacter_Exercice.BeginsWithSpecificCharacter("helloworld", "w"));
+            Console.WriteLine(BeginsWithSpecificCharacter_Exercice.BeginsWithSpecificCharacter("helloworld", 'h'));
+            Console.WriteLine(BeginsWithSpecificCharacter_Exercice.BeginsWithSpecificCharacter("helloworld", 'w'));
         }
     }
 }
