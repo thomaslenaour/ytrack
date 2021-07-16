@@ -5,6 +5,8 @@ Write a function `DifferenceInMinutes` that returns the number of seconds betwee
 # Expected Functions
 
 ```C#
+using System;
+
 namespace CSharpDiscovery.Quest02
 {
     public class DifferenceInMinutes_Exercice
