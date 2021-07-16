@@ -5,6 +5,8 @@ Write a function `TodayAtMidnight` that returns a DateTime of today at midnight
 # Expected Functions
 
 ```C#
+using System;
+
 namespace CSharpDiscovery.Quest02
 {
     public class TodayAtMidnight_Exercice
