@@ -29,7 +29,7 @@ namespace TestCSharp
 {
     class Program
     {
-        static void Main(string[] inputTab)
+        static void Main()
         {
             var inputTab = new int[] { 1, 32, 7, 33 };
             Console.WriteLine(DoubleArrayForEvenInteger_Exercice.DoubleArrayForEvenInteger(inputTab));
