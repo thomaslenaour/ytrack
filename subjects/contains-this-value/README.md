@@ -5,7 +5,7 @@ Write a function `ContainsThisValue` that returns true if the `value` passed as 
 # Expected Functions
 
 ```C#
-namespace CSharpDiscovery.Quest01
+namespace CSharpDiscovery.Quest02
 {
     public class ContainsThisValue_Exercice
     {
