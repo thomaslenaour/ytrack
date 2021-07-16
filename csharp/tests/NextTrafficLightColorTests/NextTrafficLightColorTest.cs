@@ -1,5 +1,5 @@
-﻿using student.Models;
-using student.Quest01;
+﻿using CSharpDiscovery.Models;
+using CSharpDiscovery.Quest01;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace tests
