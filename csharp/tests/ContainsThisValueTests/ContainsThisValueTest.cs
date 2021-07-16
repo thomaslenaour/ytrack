@@ -4,30 +4,30 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace tests
 {
     [TestClass]
-    public class FindThisValueTests
+    public class ContainsThisValueTests
     {
         [TestMethod]
-        public void FindThisValue_ValueHere_True()
+        public void ContainsThisValue_ValueHere_True()
         {
-            Assert.IsTrue(FindThisValue_Exercice.FindThisValue(new int[] { 1, 2, 3, 4, 5 }, 5));
+            Assert.IsTrue(ContainsThisValue_Exercice.ContainsThisValue(new int[] { 1, 2, 3, 4, 5 }, 5));
         }
 
         [TestMethod]
-        public void FindThisValue_ValueNotHere_False()
+        public void ContainsThisValue_ValueNotHere_False()
         {
-            Assert.IsFalse(FindThisValue_Exercice.FindThisValue(new int[] { 1, 2, 3, 4, 5 }, 15));
+            Assert.IsFalse(ContainsThisValue_Exercice.ContainsThisValue(new int[] { 1, 2, 3, 4, 5 }, 15));
         }
 
         [TestMethod]
-        public void FindThisValue_tabEmpty_False()
+        public void ContainsThisValue_tabEmpty_False()
         {
-            Assert.IsFalse(FindThisValue_Exercice.FindThisValue(new int[0], 15));
+            Assert.IsFalse(ContainsThisValue_Exercice.ContainsThisValue(new int[0], 15));
         }
 
         [TestMethod]
-        public void FindThisValue_tabNull_False()
+        public void ContainsThisValue_tabNull_False()
         {
-            Assert.IsFalse(FindThisValue_Exercice.FindThisValue(null, 15));
+            Assert.IsFalse(ContainsThisValue_Exercice.ContainsThisValue(null, 15));
         }
     }
 }
