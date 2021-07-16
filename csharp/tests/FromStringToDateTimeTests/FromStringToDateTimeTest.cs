@@ -10,7 +10,7 @@ namespace tests
         [TestMethod]
         public void FromStringToDateTime_PatternWithAnH_DateTimeOK()
         {
-            Assert.AreEqual(new DateTime(2021, 12, 21, 18, 33, 0, 0), FromStringToDateTime_Exercice.FromStringToDateTime("21/12/2021 18h33"));
+            Assert.AreEqual(new DateTime(2021, 12, 21, 18, 33, 0, 0), FromStringToDateTime_Exercice.FromStringToDateTime("21/12/2021 18:33"));
         }
     }
 }

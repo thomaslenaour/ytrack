@@ -1,6 +1,6 @@
 # Instructions
 
-Write a function `FromStringToDateTime` that returns a DateTime object based on the string of the form 'day/month/year' passed as parameter.
+Write a function `FromStringToDateTime` that returns a DateTime object based on the string of the form 'day/month/year hour:minutes' passed as parameter.
 
 # Expected Functions
 
@@ -31,7 +31,7 @@ namespace TestCSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(FromStringToDateTime_Exercice.FromStringToDateTime("21/12/2021 18h33"));
+            Console.WriteLine(FromStringToDateTime_Exercice.FromStringToDateTime("21/12/2021 18:33"));
         }
     }
 }
