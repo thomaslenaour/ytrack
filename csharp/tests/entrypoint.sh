@@ -10,7 +10,6 @@ dotnet nuget add source /dotnetpkg
 cp -rf ./student ./repo
 
 mkdir tests && cd tests
-ls -all /app
 cp -rf "/app/${EXERCISE}Tests" /app/tests.csproj .
 
 dotnet restore --packages /dotnetpkg
