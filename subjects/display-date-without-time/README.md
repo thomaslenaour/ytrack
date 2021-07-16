@@ -5,6 +5,8 @@ Write a function `DisplayDateWithoutTime` that returns a string in the form 'Day
 # Expected Functions
 
 ```C#
+using System;
+
 namespace CSharpDiscovery.Quest02
 {
     public class DisplayDateWithoutTime_Exercice
