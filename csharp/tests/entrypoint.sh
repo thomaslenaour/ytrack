@@ -7,10 +7,11 @@ cd /jail
 dotnet nuget disable source nuget.org
 dotnet nuget add source /dotnetpkg
 
-cp -rf /app ./tests
 cp -rf ./student ./repo
 
-cd tests
+mkdir tests && cd tests
+ls -all /app
+cp -rf "/app/${EXERCISE}Tests" /app/tests.csproj .
 
 dotnet restore --packages /dotnetpkg
 dotnet test --filter $EXERCISE --no-restore
