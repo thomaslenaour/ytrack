@@ -22,6 +22,8 @@ dotnet run
 
 to get an output of your function in your console.
 
+You can use any IDE, though Virtual Studio Code and the C# extension is recommended (you will be prompted to install it).
+
 # Instructions
 
 Write a function `HelloWorld` that return the string 'Hello World !'.
