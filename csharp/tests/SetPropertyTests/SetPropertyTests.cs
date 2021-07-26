@@ -2,6 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CSharpDiscovery.Quest03;
 using System;
 using System.Reflection;
+using Utils;
 
 namespace tests
 {
@@ -11,16 +12,13 @@ namespace tests
         [TestMethod]
         public void CheckProperties()
         {
-            var poi = new PointOfInterest();
-            Assert.IsNotNull(poi.GetType().GetProperty("Latitude"), "The latitude property does not exists");
-            Assert.IsNotNull(poi.GetType().GetProperty("Longitude"), "The longitude property does not exists");
-            Assert.IsNotNull(poi.GetType().GetProperty("Name"), "The name property does not exists");
+            Assert.IsTrue(TestUtils.HasProperty<PointOfInterest>("Latitude"), "The latitude property does not exists");
+            Assert.IsTrue(TestUtils.HasProperty<PointOfInterest>("Longitude"), "The longitude property does not exists");
+            Assert.IsTrue(TestUtils.HasProperty<PointOfInterest>("Name"), "The name property does not exists");
 
-            Assert.AreEqual(typeof(PointOfInterest).GetProperty("Latitude").PropertyType.Name, "Double", $"Longitude must be a Double, not a {typeof(PointOfInterest).GetProperty("Latitude").PropertyType.Name}");
-            Assert.AreEqual(typeof(PointOfInterest).GetProperty("Longitude").PropertyType.Name, "Double", $"Latitude must be a Double, not a {typeof(PointOfInterest).GetProperty("Longitude").PropertyType.Name}");
-            Assert.AreEqual(typeof(PointOfInterest).GetProperty("Name").PropertyType.Name, "String", $"Name must be a String, not a {typeof(PointOfInterest).GetProperty("Name").PropertyType.Name}");
-
-            
+            Assert.IsTrue(TestUtils.TypeOfProperty<PointOfInterest>("Latitude", "Double"),$"Latitude must be a Double, not a {typeof(PointOfInterest).GetProperty("Latitude").PropertyType.Name}");
+            Assert.IsTrue(TestUtils.TypeOfProperty<PointOfInterest>("Longitude", "Double"),$"Longitude must be a Double, not a {typeof(PointOfInterest).GetProperty("Latitude").PropertyType.Name}");
+            Assert.IsTrue(TestUtils.TypeOfProperty<PointOfInterest>("Name", "String"),$"Name must be a String, not a {typeof(PointOfInterest).GetProperty("Latitude").PropertyType.Name}");
         }
         [TestMethod]
         public void CheckGoogleMapUrl() {
