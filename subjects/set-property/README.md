@@ -33,7 +33,7 @@ namespace TestCSharp
             Console.WriteLine(poi.Longitude);
             Console.WriteLine(poi.Name);
 
-            Console.WriteLine(PointOfInterest.GoogleMapsUrlTemplate);
+            Console.WriteLine(poi.GoogleMapsUrlTemplate);
         }
     }
 }
