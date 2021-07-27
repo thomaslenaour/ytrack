@@ -18,14 +18,10 @@ namespace tests
         {
             try
             {
-                Type type = typeof(PointOfInterest);
-                ConstructorInfo ctor = type.GetConstructor(Type.EmptyTypes);
-                Instances.Add(ctor.Invoke(new object[] {}));
-
-                type = typeof(PointOfInterest);
-                ctor = type.GetConstructor(new[] {
+                ConstructorInfo ctor = typeof(PointOfInterest).GetConstructor(new[] {
                     typeof(String), typeof(Double), typeof(Double)
                 });
+                Instances.Add(ctor.Invoke(new object[] { "Bordeaux Ynov Campus", 44.854186, -0.5663056 }));
                 Instances.Add(ctor.Invoke(new object[] {"Paris Ynov Campus", 48.9016552, 2.2079985}));
                 Instances.Add(ctor.Invoke(new object[] { "Random Point", 3, 2 }));
             }
@@ -34,11 +30,11 @@ namespace tests
                 Assert.Fail("Error creating the instances, check your constructors");
                 throw;
             }
-        }
+        }   
 
         [TestMethod]
         public void MethodExists() {
-            Assert.IsTrue(TestUtils.HasMethod<PointOfInterest>("GetGoogleMapsUrl", "String"), "Error finding the method GetGoogleMapsUrl, check the name, the parameters and the return value");
+            Assert.IsTrue(TestUtils.HasMethod<PointOfInterest>("GetGoogleMapsUrl", typeof(string)), "Error finding the method GetGoogleMapsUrl, check the name, the parameters and the return value");
         }
 
         [TestMethod]

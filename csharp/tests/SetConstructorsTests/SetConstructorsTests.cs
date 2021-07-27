@@ -2,6 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CSharpDiscovery.Quest03;
 using System;
 using System.Reflection;
+using System.Collections.Generic;
 using Utils;
 
 namespace tests
@@ -12,7 +13,16 @@ namespace tests
         [TestMethod]
         public void CheckConstructors()
         {
-            Assert.AreEqual(" No params | String Double Double", TestUtils.ConstructorsList<PointOfInterest>(), "The constructors are incorrect");           
+
+            List<List<Type>> Constructors = new List<List<Type>>();
+            Constructors.Add(new List<Type>());
+            List<Type> ctr2 = new List<Type>();
+            ctr2.Add(typeof(string));
+            ctr2.Add(typeof(double));
+            ctr2.Add(typeof(double));
+            Constructors.Add(ctr2);
+
+            Assert.AreEqual(TestUtils.ConvertToString(Constructors), TestUtils.ConvertToString(TestUtils.ConstructorsList<PointOfInterest>()), "The constructors are incorrect");           
         }
 
         [TestMethod]
