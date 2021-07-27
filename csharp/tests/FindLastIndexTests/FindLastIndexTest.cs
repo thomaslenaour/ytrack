@@ -23,7 +23,7 @@ namespace tests
         [TestMethod]
         public void FindLastIndex_NoOccurence_Null()
         {
-            var tab = new int[] { 1, 2, 3, 4, 5, 6 };
+            var tab = new int[] { 1, 2, 3, 4, 5 };
             Assert.AreEqual(null, FindLastIndex_Exercice.FindLastIndex(tab, 17));
         }
 
