@@ -18,14 +18,10 @@ namespace tests
         {
             try
             {
-                Type type = typeof(PointOfInterest);
-                ConstructorInfo ctor = type.GetConstructor(Type.EmptyTypes);
-                Instances.Add(ctor.Invoke(new object[] {}));
-
-                type = typeof(PointOfInterest);
-                ctor = type.GetConstructor(new[] {
+                ConstructorInfo ctor = typeof(PointOfInterest).GetConstructor(new[] {
                     typeof(String), typeof(Double), typeof(Double)
                 });
+                Instances.Add(ctor.Invoke(new object[] { "Bordeaux Ynov Campus", 44.854186, -0.5663056 }));
                 Instances.Add(ctor.Invoke(new object[] {"Paris Ynov Campus", 48.9016552, 2.2079985}));
                 Instances.Add(ctor.Invoke(new object[] { "Random Point", 3, 2 }));
             }
