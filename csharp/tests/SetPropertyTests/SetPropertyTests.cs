@@ -7,7 +7,7 @@ using Utils;
 namespace tests
 {
     [TestClass]
-    public class SetProperties
+    public class SetPropertyTests
     {
         [TestMethod]
         public void CheckProperties()
