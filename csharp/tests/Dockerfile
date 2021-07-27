@@ -15,5 +15,3 @@ COPY . .
 RUN rm -rf setup
 
 ENTRYPOINT ["/app/entrypoint.sh"]
-
-# WSH
