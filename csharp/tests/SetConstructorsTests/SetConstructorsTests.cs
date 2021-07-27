@@ -8,12 +8,11 @@ using Utils;
 namespace tests
 {
     [TestClass]
-    public class SetConstructorsTest
+    public class SetConstructorsTests
     {
         [TestMethod]
         public void CheckConstructors()
         {
-
             List<List<Type>> Constructors = new List<List<Type>>();
             Constructors.Add(new List<Type>());
             List<Type> ctr2 = new List<Type>();
@@ -26,13 +25,14 @@ namespace tests
         }
 
         [TestMethod]
-        public void CheckNoParamConstructor() {
+        public void CheckNoParamConstructor()
+        {
             object instance;
             try
             {
                 Type type = typeof(PointOfInterest);
                 ConstructorInfo ctor = type.GetConstructor(Type.EmptyTypes);
-                instance = ctor.Invoke(new object[] {});
+                instance = ctor.Invoke(new object[] { });
             }
             catch (System.Exception)
             {
@@ -46,7 +46,8 @@ namespace tests
         }
 
         [TestMethod]
-        public void Check3ParamsConstructor() {
+        public void Check3ParamsConstructor()
+        {
             object instance;
             try
             {
@@ -54,7 +55,7 @@ namespace tests
                 ConstructorInfo ctor = type.GetConstructor(new[] {
                     typeof(String), typeof(Double), typeof(Double)
                 });
-                instance = ctor.Invoke(new object[] {"Bordeaux Ynov Campus", 44.854186, -0.5663056});
+                instance = ctor.Invoke(new object[] { "Bordeaux Ynov Campus", 44.854186, -0.5663056 });
             }
             catch (System.Exception)
             {
@@ -67,4 +68,4 @@ namespace tests
             Assert.AreEqual(-0.5663056, TestUtils.GetValueFromInstance(instance, "Longitude"), "Values are not affected correctly !");
         }
     }
-} 
+}
