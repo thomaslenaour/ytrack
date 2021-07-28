@@ -4,7 +4,7 @@ Create a filename `HistoricalMonument.cs` with the same namespace `CSharpDiscove
 
 Create a class named `HistoricalMonument` and make it inherit from `PointOfInterest` and add an integer property `BuildYear`
 
-Using the keyword `base()`, create a constructor that requires the following arguments: `Latitude`, `Longitude`, `Name` and `BuildYear`
+Using the keyword `base()`, create a constructor that requires the following arguments: `Latitude`, `Longitude`, `Name` and `BuildYear`. Also add an empty constructor.
 
 Redefine the method `ToString` so that it returns a string under the format `"(Name) is a historical monument built in (BuildYear)"`
 
