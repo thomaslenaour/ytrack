@@ -36,7 +36,7 @@ namespace tests
         }
 
         [TestMethod]
-        public void CheckNoParamConstructor()
+        public void CheckNoParamConstructor1()
         {
             try
             {
@@ -49,14 +49,14 @@ namespace tests
                 throw;
             }
 
-            Assert.AreEqual("Unknown", TestUtils.GetValueFromInstance(instance, "Model"), "Values are not affected correctly !");
+            Assert.AreEqual("0", TestUtils.GetValueFromInstance(instance, "Tonnage"), "Values are not affected correctly !");
             Assert.AreEqual("Unknown", TestUtils.GetValueFromInstance(instance, "Brand"), "Values are not affected correctly !");
             Assert.AreEqual("Unknown", TestUtils.GetValueFromInstance(instance, "Color"), "Values are not affected correctly !");
             Assert.AreEqual(0, TestUtils.GetValueFromInstance(instance, "CurrentSpeed"), "Values are not affected correctly !");
         }
 
         [TestMethod]
-        public void Check4ParamsConstructor()
+        public void Check4ParamsConstructor1()
         {
 
             try
@@ -64,7 +64,7 @@ namespace tests
                 ConstructorInfo ctor = typeof(Car).GetConstructor(new[] {
                     typeof(String), typeof(String), typeof(String), typeof(Int32)
             });
-                instance = ctor.Invoke(new object[] { "Mégane", "Renault", "Yellow", 50 });
+                instance = ctor.Invoke(new object[] { 2, "MAC", "White", 80 });
             }
             catch (System.Exception)
             {
@@ -72,10 +72,32 @@ namespace tests
                 throw;
             }
 
-            Assert.AreEqual("Mégane", TestUtils.GetValueFromInstance(instance, "Model"), "Values are not affected correctly !");
+            Assert.AreEqual(2, TestUtils.GetValueFromInstance(instance, "Tonnage"), "Values are not affected correctly !");
+            Assert.AreEqual("MAC", TestUtils.GetValueFromInstance(instance, "Brand"), "Values are not affected correctly !");
+            Assert.AreEqual("White", TestUtils.GetValueFromInstance(instance, "Color"), "Values are not affected correctly !");
+            Assert.AreEqual(80, TestUtils.GetValueFromInstance(instance, "CurrentSpeed"), "Values are not affected correctly !");
+        }
+        [TestMethod]
+        public void Check4ParamsConstructor2()
+        {
+
+            try
+            {
+                ConstructorInfo ctor = typeof(Car).GetConstructor(new[] {
+                    typeof(String), typeof(String), typeof(String), typeof(Int32)
+            });
+                instance = ctor.Invoke(new object[] { 3, "Renault", "Black", 20 });
+            }
+            catch (System.Exception)
+            {
+                Assert.Fail("Cannot call the constructor with 4 parameters");
+                throw;
+            }
+
+            Assert.AreEqual(3, TestUtils.GetValueFromInstance(instance, "Tonnage"), "Values are not affected correctly !");
             Assert.AreEqual("Renault", TestUtils.GetValueFromInstance(instance, "Brand"), "Values are not affected correctly !");
-            Assert.AreEqual("Yellow", TestUtils.GetValueFromInstance(instance, "Color"), "Values are not affected correctly !");
-            Assert.AreEqual(50, TestUtils.GetValueFromInstance(instance, "CurrentSpeed"), "Values are not affected correctly !");
+            Assert.AreEqual("Black", TestUtils.GetValueFromInstance(instance, "Color"), "Values are not affected correctly !");
+            Assert.AreEqual(20, TestUtils.GetValueFromInstance(instance, "CurrentSpeed"), "Values are not affected correctly !");
         }
 
         [TestMethod]
