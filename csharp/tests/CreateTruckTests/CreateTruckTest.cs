@@ -25,7 +25,7 @@ namespace tests
             List<List<Type>> Constructors = new List<List<Type>>();
             Constructors.Add(new List<Type>());
             List<Type> ctr2 = new List<Type>();
-            ctr2.Add(typeof(string));
+            ctr2.Add(typeof(int));
             ctr2.Add(typeof(string));
             ctr2.Add(typeof(string));
             ctr2.Add(typeof(int));
@@ -36,7 +36,7 @@ namespace tests
         }
 
         [TestMethod]
-        public void CheckNoParamConstructor1()
+        public void CheckNoParamConstructor()
         {
             try
             {
@@ -49,10 +49,16 @@ namespace tests
                 throw;
             }
 
-            Assert.AreEqual("0", TestUtils.GetValueFromInstance(instance, "Tonnage"), "Values are not affected correctly !");
+            Assert.AreEqual(0, TestUtils.GetValueFromInstance(instance, "Tonnage"), "Values are not affected correctly !");
             Assert.AreEqual("Unknown", TestUtils.GetValueFromInstance(instance, "Brand"), "Values are not affected correctly !");
             Assert.AreEqual("Unknown", TestUtils.GetValueFromInstance(instance, "Color"), "Values are not affected correctly !");
             Assert.AreEqual(0, TestUtils.GetValueFromInstance(instance, "CurrentSpeed"), "Values are not affected correctly !");
+        }
+
+        [TestMethod]
+        public void CheckToString1()
+        {
+            Assert.AreEqual("Unknown Unknown 0T Truck", TestUtils.CallMethod(instance, "ToString"));
         }
 
         [TestMethod]
@@ -61,8 +67,8 @@ namespace tests
 
             try
             {
-                ConstructorInfo ctor = typeof(Car).GetConstructor(new[] {
-                    typeof(String), typeof(String), typeof(String), typeof(Int32)
+                ConstructorInfo ctor = typeof(Truck).GetConstructor(new[] {
+                    typeof(Int32), typeof(String), typeof(String), typeof(Int32)
             });
                 instance = ctor.Invoke(new object[] { 2, "MAC", "White", 80 });
             }
@@ -77,14 +83,20 @@ namespace tests
             Assert.AreEqual("White", TestUtils.GetValueFromInstance(instance, "Color"), "Values are not affected correctly !");
             Assert.AreEqual(80, TestUtils.GetValueFromInstance(instance, "CurrentSpeed"), "Values are not affected correctly !");
         }
+
+        [TestMethod]
+        public void CheckToString2()
+        {
+            Assert.AreEqual("White MAC 2T Truck", TestUtils.CallMethod(instance, "ToString"));
+        }
         [TestMethod]
         public void Check4ParamsConstructor2()
         {
 
             try
             {
-                ConstructorInfo ctor = typeof(Car).GetConstructor(new[] {
-                    typeof(String), typeof(String), typeof(String), typeof(Int32)
+                ConstructorInfo ctor = typeof(Truck).GetConstructor(new[] {
+                    typeof(Int32), typeof(String), typeof(String), typeof(Int32)
             });
                 instance = ctor.Invoke(new object[] { 3, "Renault", "Black", 20 });
             }
@@ -100,11 +112,9 @@ namespace tests
             Assert.AreEqual(20, TestUtils.GetValueFromInstance(instance, "CurrentSpeed"), "Values are not affected correctly !");
         }
 
-        [TestMethod]
-
-        public void CheckToString()
+        public void CheckToString3()
         {
-            Assert.AreEqual("Yellow Renault Mégane", TestUtils.CallMethod(instance, "ToString"));
+            Assert.AreEqual("Black Renault 3T Truck", TestUtils.CallMethod(instance, "ToString"));
         }
     }
 }
