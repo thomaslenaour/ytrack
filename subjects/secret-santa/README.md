@@ -17,7 +17,7 @@ namespace CSharpDiscovery.Quest02
 {
     public class SecretSanta_Exercice
     {
-        public static Dictionary<string,string> SecretSanta(HashSet<string> people)
+        public static Dictionary<string,string> SecretSantaDraw(HashSet<string> people)
         {
             // Your code
         }
@@ -41,7 +41,7 @@ namespace TestCSharp
         static void Main(string[] args)
         {
             var people = new HashSet<string> { "Arnaud", "Marie", "Alexandre", "Audrey", "Adrien", "Mathilde", "Théophile", "Hanako" };
-            var draw = SecretSanta_Exercice.SecretSanta(people);
+            var draw = SecretSanta_Exercice.SecretSantaDraw(people);
 
             foreach (KeyValuePair<string, string> pair in draw) {
                 Console.WriteLine("{0} is offering to {1}", pair.Key, pair.Value);
