@@ -8,7 +8,7 @@ using Utils;
 namespace tests
 {
     [TestClass]
-    public class CreateCarTests
+    public class CreateTruckTests
     {
 
         public static object instance;
@@ -16,7 +16,7 @@ namespace tests
         [TestMethod]
         public void CheckInherance()
         {
-            Assert.IsTrue(typeof(Car).IsSubclassOf(typeof(Vehicule)), "Car is not inheriting from Vehicule");
+            Assert.IsTrue(typeof(Truck).IsSubclassOf(typeof(Vehicule)), "Truck is not inheriting from Truck");
         }
 
         [TestMethod]
@@ -32,7 +32,7 @@ namespace tests
             Constructors.Add(ctr2);
 
 
-            Assert.AreEqual(TestUtils.ConvertToString(Constructors), TestUtils.ConvertToString(TestUtils.ConstructorsList<Car>()));
+            Assert.AreEqual(TestUtils.ConvertToString(Constructors), TestUtils.ConvertToString(TestUtils.ConstructorsList<Truck>()));
         }
 
         [TestMethod]
@@ -40,7 +40,7 @@ namespace tests
         {
             try
             {
-                ConstructorInfo ctor = typeof(Car).GetConstructor(Type.EmptyTypes);
+                ConstructorInfo ctor = typeof(Truck).GetConstructor(Type.EmptyTypes);
                 instance = ctor.Invoke(new object[] { });
             }
             catch (System.Exception)
