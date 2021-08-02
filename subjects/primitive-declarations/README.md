@@ -63,7 +63,7 @@ The whole **first thing** to learn in any language is _"How do I declare a varia
 Let’s see an example of this step :
 
 ```php
-$myVariable = "Facile non ?";
+$myVariable = "Easy no?";
 ```
 
 > You can notice that we used [camelCase](https://en.wikipedia.org/wiki/Camel_case) (best of all 🔥) for the variable name.
@@ -74,17 +74,17 @@ Variables can represent any type of value, and they can be reassigned to differe
 
 ```php
 $maVariable = 5 ;
-$myVariable = "Maintenant, on m'attribue une chaîne ! Fabuleux.";
+$myVariable = "Now I am assigned a string! Fabulous.";
 ```
 
 Below is a summary table of incorrect variable declaration syntaxes.
 
 ```php
-$var 1 = "toto" ; // Pas d'espace
-$var-1 = "toto" ; // Pas de tiret
-$-var = "toto" ; // Pas de tiret
-$20var = "toto" ; // Impossible de commencer par un nombre
-var = "toto" ; // Nécessairement un $ devant le nom
+$var 1 = "toto" ; // No space
+$var-1 = "toto" ; // No dash
+$-var = "toto" ; // No dash
+$20var = "toto" ; // Cannot start with a number
+var = "toto" ; // Necessarily a $ in front of the name
 ```
 
 > **_Note_** : PHP is one of the few programming languages ​​that accepts accented characters in variable names. However, their use is strongly discouraged for reasons of maintenance and portability.
