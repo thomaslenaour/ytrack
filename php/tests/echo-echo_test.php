@@ -2,7 +2,7 @@
 
 $tests = [];
 
-$fileContent = executeFile('echo-echo');
+$fileContent = executeFile('echo-echo',false);
 
 $tests[] = static fn ($eq): bool => count($fileContent) > 0;
 $tests[] = static fn ($eq, $exerciseName): bool => $eq(countLinesInFile($exerciseName), 3);
