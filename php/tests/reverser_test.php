@@ -7,7 +7,7 @@ $reflectionReverse = new ReflectionFunction('reverse');
 $tests[] = static fn ($eq): bool => $eq($reflectionReverse->getNumberOfRequiredParameters(), 1);
 $tests[] = static fn ($eq): bool => $reflectionReverse->hasReturnType();
 
-$tests[] = static fn ($eq): bool => $eq(reverse('Coucou'), 'oucouC');
+$tests[] = static fn ($eq): bool => $eq(reverse('Coucou'), 'uocuoC');
 $tests[] = static fn ($eq): bool => $eq(reverse('radar'), 'radar');
 $tests[] = static fn ($eq): bool => $eq(reverse('Je suis la'), 'al sius eJ');
 $tests[] = static fn ($eq): bool => !$eq(reverse('Je suis la'), 'al sius Je');
