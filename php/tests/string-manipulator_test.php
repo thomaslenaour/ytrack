@@ -8,8 +8,8 @@ $tests[] = static fn ($eq): bool => $eq(capsMe("cappppps"), 'CAPPPPPS');
 $tests[] = static fn ($eq): bool => $eq(lowerMe("I'M CLINT"), "i'm clint");
 $tests[] = static fn ($eq): bool => $eq(lowerMe("I don't speak SPANish"), "i don't speak spanish");
 
-$tests[] = static fn ($eq): bool => $eq(upperCase("hello My Name is Quentin"), "Hello My Name Is Quentin");
-$tests[] = static fn ($eq): bool => $eq(upperCase("okkkkey let's go"), "Okkkkey Let's Go");
+$tests[] = static fn ($eq): bool => $eq(upperCaseFirst("hello My Name is Quentin"), "Hello My Name Is Quentin");
+$tests[] = static fn ($eq): bool => $eq(upperCaseFirst("okkkkey let's go"), "Okkkkey Let's Go");
 
 $tests[] = static fn ($eq): bool => $eq(lowerCaseFirst("Yeah Babe"), "yeah babe");
 $tests[] = static fn ($eq): bool => $eq(lowerCaseFirst("i'm So tied"), "i'm so tied");
