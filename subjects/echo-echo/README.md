@@ -22,6 +22,8 @@ echo "My name is : $name"; // Display My name is : toto
 - Display with an echo the sentence: "This is my first echo !" with a space at the end of the line.
 - Display with an echo the sentence: "My variable : (content of the myVariable variable)".
 
+> Add a **\n** just before the end of your strings
+
 **The script must be exactly 3 lines**.
 
 _Ps : White lines + the line "<?php" are not taken into account
