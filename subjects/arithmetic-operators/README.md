@@ -24,7 +24,7 @@ $secondNbr = 35;
 - `firstSum` The sum of two numbers
 - `firstSub` The subtraction of two numbers
 - `firstMult` The multiplication of two numbers
-- `firstDivision` The division of two numbers rounded to 2 decimal places
+- `firstDivision` The division of two numbers
 - `firstModulus` The modulo of two numbers
 
 ### Notions
