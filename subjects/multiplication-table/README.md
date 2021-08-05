@@ -22,7 +22,7 @@ In PHP the following elements create loops :
 
 The while loop executes a block of code as long as a condition is true.
 
-![img.png](img.png)
+![while](https://i.imgur.com/vKCywyX.png)
 
 Syntax :
 
