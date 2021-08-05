@@ -32,7 +32,7 @@ You can improve the decision-making process by providing an alternative choice b
 
 The if ... else statement lets you execute one block of code if the specified condition evaluates to true and another block of code if it evaluates to false. It can be written, like this :
 
-![img.png](img.png)
+![img.png](https://imgur.com/a/viKjL5C)
 
 #### Syntaxe :
 
@@ -51,8 +51,7 @@ The if ... else statement lets you execute one block of code if the specified co
 
 This is a special statement used to combine multiple if ... else statements.
 
-![img_1.png](img_1.png)
-
+![img_1.png](img_1.https://i.imgur.com/OB5GTHE.png
 #### Syntax :
 
 ```php
