@@ -19,12 +19,12 @@ $month = LETTERS_MONTH[intval(date("m"))];
 
 $tests = [];
 
-$reflecToday = new ReflectionFunction('today');
+$reflecToday = new ReflectionFunction($today);
 
 $tests[] = static fn ($eq, $exerciseName): bool => $reflecToday->isClosure();
 $tests[] = static fn ($eq, $exerciseName): bool => $eq($today(), "It is $month " . date('d') . ", " . date('Y'));
 
-$reflecLeap = new ReflectionFunction('isLeapYear');
+$reflecLeap = new ReflectionFunction($isLeapYear);
 
 $tests[] = static fn ($eq, $exerciseName): bool => $reflecLeap->isClosure();
 $tests[] = static fn ($eq, $exerciseName): bool => !$isLeapYear(2017);
