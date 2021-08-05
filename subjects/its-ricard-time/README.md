@@ -8,7 +8,7 @@ It is used to test the condition after the first iteration and execution of the 
 
 In the case of the while loop, the condition is examined before the loop while for the do-while loop it is examined at the end. So even if this condition is not true, the loop will run at least once.
 
-![img.png](img.png)
+![do while](https://i.imgur.com/rrFrxXb.png)
 
 #### Syntax :
 
