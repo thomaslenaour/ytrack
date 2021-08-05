@@ -145,7 +145,7 @@ Now you see the "Hello" messages twice.
 
 ### Instructions
 
-Create a `$today` closure that will display "It is (current month) (current day number), (current year)"
+Create a `$today` closure that will return "It is (current month) (current day number), (current year)"
 
 Example : `It is July 29, 2021`
 
