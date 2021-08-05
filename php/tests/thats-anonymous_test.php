@@ -15,7 +15,7 @@ const LETTERS_MONTH = [
     12 => 'December',
 ];
 
-$month = LETTERS_MONTH[date("m")];
+$month = LETTERS_MONTH[intval(date("m"))];
 
 $tests = [];
 
