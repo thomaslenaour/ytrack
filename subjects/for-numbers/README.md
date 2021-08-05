@@ -4,7 +4,7 @@
 
 The for loop in PHP does not work like the while or do ... while loop, in the case of a for loop we have to declare in advance how many times we want the loop to execute.
 
-![img.png](img.png)
+![for](https://i.imgur.com/PuwtZTE.png)
 
 ---
 
