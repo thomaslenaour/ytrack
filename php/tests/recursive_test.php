@@ -2,8 +2,12 @@
 
 function newFactorial(int $number): float
 {
+    if ($number <= 1) {
+        return 1;
+    }
     return $number * newFactorial($number - 1);
 }
+echo newFactorial(45);
 
 $tests = [];
 
