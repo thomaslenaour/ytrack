@@ -22,7 +22,6 @@ $tests = [];
 $reflecToday = new ReflectionFunction('today');
 
 $tests[] = static fn ($eq, $exerciseName): bool => $reflecToday->isClosure();
-$tests[] = static fn ($eq, $exerciseName): bool => $eq($today(), "Nous sommes le " . date('d') . " $month " . date('Y'));
 $tests[] = static fn ($eq, $exerciseName): bool => $eq($today(), "It is $month " . date('d') . ", " . date('Y'));
 
 $reflecLeap = new ReflectionFunction('isLeapYear');
