@@ -43,7 +43,7 @@ namespace tests
                 Assert.Fail("Cannot find property BatteryLevel in IElectricCar");
             }
 
-            var GetBatteryMethod = typeof(IElectricCar).GetMethod("getBattery");
+            var GetBatteryMethod = typeof(IElectricCar).GetMethod("GetBatteryLevel");
             if (GetBatteryMethod != null) {
                 Assert.AreEqual(typeof(Int32), GetBatteryMethod.ReturnType, "GetBatteryLevel() must return an integer");
             } else {
