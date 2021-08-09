@@ -10,7 +10,7 @@ Recreate most usable basic array functions.
 
 - Create a `sum(array): int` function which will return the sum of the values ​​of an array.
 
-- Create an `arrayContains(string, array): int|string` function which will indicate if a value belongs to an array. Return the string if true or "Nothing" if false.
+- Create an `arrayContains(array, int|string|float): int|string` function which will indicate if a value belongs to an array. Return the string if true or "Nothing" if false.
 
 - Create a `merge(array, array, array)` function which will merge several arrays into one and return the final array.
 
