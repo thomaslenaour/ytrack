@@ -8,7 +8,7 @@ $tests[] = static fn ($eq): bool => $eq(reverse(['Js', 'Php', 'Go', 'Html', 'Css
 $tab = [];
 push($tab, 'first', 'second', 'five');
 
-$tests[] = static fn ($eq): bool => $eq($tab, ['first', 'second', 'five']);
+$tests[] = static fn ($eq): bool => $eq($tab, ['first', 'second', 'five', 'first', 'second', 'five']);
 
 $tests[] = static fn ($eq): bool => $eq(sum([9, 10, 20]), 39);
 $tests[] = static fn ($eq): bool => $eq(sum([0, -1]), -1);
