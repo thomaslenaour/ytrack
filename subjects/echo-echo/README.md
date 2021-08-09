@@ -19,7 +19,7 @@ echo "My name is : $name"; // Display My name is : toto
 ### Instructions
 
 - Create a variable `myVariable` with the value 12.
-- Display with an echo the sentence: "This is my first echo !" with a space at the end of the line.
+- Display with an echo the sentence: "This is my first echo !" with a line break at the end of the line (`"\n"`).
 - Display with an echo the sentence: "My variable : (content of the myVariable variable)".
 
 > Add a **\n** just before the end of your strings
