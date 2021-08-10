@@ -15,7 +15,7 @@ Find a way to compile your program, knowing that:
 -   `GetFuelLevel()` and `GetBatteryLevel` return respectively `FuelLevel` and `BatteryLevel`
 -   `FillUp()` and `Recharge()` respectively set back the value to `100`% of `FuelLevel` and `BatteryLevel`
 
-Finally, override the `ToString()` method so that it returns the `ToString()` string of `Car` but with `", Battery: (BatteryLevel)%, Fuel (FuelLevel)%"` at the end of the string.
+Finally, override the `ToString()` method so that it returns the `ToString()` string of `Car` but with `"(Color) (Brand) (Model), Battery: (BatteryLevel)%, Fuel (FuelLevel)%"` at the end of the string.
 
 # Usage
 
