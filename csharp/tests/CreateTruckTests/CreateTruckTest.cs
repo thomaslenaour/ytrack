@@ -16,7 +16,7 @@ namespace tests
         [TestMethod]
         public void CheckInherance()
         {
-            Assert.IsTrue(typeof(Truck).IsSubclassOf(typeof(Vehicule)), "Truck is not inheriting from Truck");
+            Assert.IsTrue(typeof(Truck).IsSubclassOf(typeof(Vehicule)), "Truck is not inheriting from Vehicule");
         }
 
         [TestMethod]
