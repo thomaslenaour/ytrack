@@ -23,6 +23,7 @@ Here is a possible Program.cs file to test your code :
 
 ```c#
 using CSharpDiscovery.Quest04;
+using System;
 
 namespace TestCSharp
 {
