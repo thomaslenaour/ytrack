@@ -28,9 +28,9 @@ The instructions to be executed when this function is called will be placed betw
 
 ### Instructions
 
-Create a `sayHello` function that says "Hello".
+Create a `sayHello` function that returns "Hello".
 
-Create a `sayHelloTo` function that says "Hello $name".
+Create a `sayHelloTo` function that returns "Hello $name".
 
 `sayHelloTo` with the following available parameters:
 
