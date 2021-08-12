@@ -20,7 +20,7 @@ The if statement is used to execute a block of code only if the specified condit
 <?php
 
  if (condition) {
-   // Code à exécuter
+   // Code to run
  }
 ```
 
@@ -58,11 +58,11 @@ This is a special statement used to combine multiple if ... else statements.
 <?php
 
  if (condition1) {
-   // Code à exécuter si condition1 est vraie
+   // Code to run if condition1 is true
  } elseif (condition2) {
-  // Code à exécuter si la condition1 est fausse et la condition2 est vraie
+  // Code to run if condition1 is false and condition2 is true
  } else {
-  // Code à exécuter si condition1 et condition2 sont fausses
+  // Code to run if condition1 and condition2 are false
  }
 ```
 
