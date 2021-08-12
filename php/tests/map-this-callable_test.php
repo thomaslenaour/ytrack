@@ -31,6 +31,6 @@ $tests[] = static fn ($eq): bool => $eq(
 );
 
 $tests[] = static fn ($eq): bool => $eq(
-    myArrayMap(static fn ($n) => $n['value'], ['value' => 1, 'value' => 2, 'value' => 3]),
+    myArrayMap(static fn ($n) => $n['value'], ['value1' => 1, 'value2' => 2, 'value3' => 3]),
     [1, 2 ,3]
 );
