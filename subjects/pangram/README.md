@@ -13,4 +13,4 @@ Create a function `isPangram(string): bool`
 ### Notions
 
 - [regex](https://www.w3schools.com/php/php_regex.asp)
-- [preg_replace](https://www.php.net/manual/en/function.preg-replace.php)
+- [preg_match](https://www.php.net/manual/en/function.preg-match.php)
