@@ -22,7 +22,7 @@ do {
 
 ---
 
-#### Exemple :
+#### Example :
 
 ```php
 <?php
@@ -36,7 +36,7 @@ do {
 } while($i <= 10);
 ```
 
-> Note : There are two instructions which allow to modify the execution of loops, they are `break` and` continue`.
+> Note : There are two instructions which allow to modify the execution of loops, `break` and` continue`.
 
 ---
 
@@ -79,6 +79,8 @@ Using the `do {...} while ()` statement, write a script that will increment the 
 - At the 7th ricard, stop the loop.
 
 **Warning ! Don't forget to skip a line at the end of each echo.**
+
+> 
 
 ### Notions
 

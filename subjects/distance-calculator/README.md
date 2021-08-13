@@ -44,7 +44,7 @@ Create a `Geolocation` class.
 
 In this class create a static method `fromGeoPoints` which will calculate the distance in two geographic coordinates.
 
-The returned result will be an array with the distance in `kilometers`
+The returned result will be a float with the distance in `kilometers`
 
 ⚠ The result must be rounded off to two decimal places.
 
@@ -58,4 +58,4 @@ $calc = Geolocation::fromGeoPoints(40.76, -73.984, 38.89, -77.032); // 333.09
 
 ### Notions
 
-- [php.net/manual/en/language.oop5.static.php](https://www.php.net/manual/en/language.oop5.static.php)
+-   [php.net/manual/en/language.oop5.static.php](https://www.php.net/manual/en/language.oop5.static.php)
