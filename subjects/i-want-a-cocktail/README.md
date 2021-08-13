@@ -53,7 +53,7 @@ Okkkk good now that we have our object ... how do we use it? 🤔
 
 Here is how to create an object in PHP :
 
-- Instantiation using the new keyword followed by the name of the object.
+-   Instantiation using the new keyword followed by the name of the object.
 
 ```php
 <?php
@@ -73,8 +73,6 @@ $car1->fuelLevel; // 45.4
 ```
 
 The variable **$car1** represents the object which is here a car. When you run this code, the \_\_construct () method of the class is executed.
-
-Comme il s'agit d'une fonction, elle peut prendre elle aussi des paramètres 🤩. Tout dépend comment vous souhaitez coder votre classe, mais vous pourriez très bien avoir une fonction \_\_construct() qui initialise les attributs en fonction des paramètres que vous lui fournissez.
 
 As it is a function, it can also take parameters 🤩. It all depends on how you want to code your class, but you could very well have a \_\_construct() function that initializes the attributes based on the parameters you supply to it.
 
@@ -122,18 +120,18 @@ Create a class named `Mojito`.
 
 This class must have the following attributes (+ base values) :
 
-- `alcoholRate` : The level of alcohol in the blood
-  - Type: float
-  - Value: 0.15
-- `ingredients` : The ingredients that make up the Mojito
-  - Type: array
-  - Value: rum, lime, sparkling water, mint, sugar
-- `price` : The price of the Mojito
-  - Type: int
-  - Value: 8
+-   `alcoholRate` : The level of alcohol in the blood
+    -   Type: float
+    -   Value: 0.15
+-   `ingredients` : The ingredients that make up the Mojito
+    -   Type: array
+    -   Value: rum, lime, sparkling water, mint, sugar
+-   `price` : The price of the Mojito
+    -   Type: int
+    -   Value: 8
 
 ### Notions
 
-- [Object-Oriented programming (OOP)](https://www.php.net/manual/en/language.oop5.basic.php)
-- [Properties](https://www.php.net/manual/en/language.oop5.properties.php)
-- [Constructor](https://www.php.net/manual/en/language.oop5.decon.php)
+-   [Object-Oriented programming (OOP)](https://www.php.net/manual/en/language.oop5.basic.php)
+-   [Properties](https://www.php.net/manual/en/language.oop5.properties.php)
+-   [Constructor](https://www.php.net/manual/en/language.oop5.decon.php)
