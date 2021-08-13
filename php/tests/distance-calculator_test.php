@@ -1,7 +1,7 @@
 <?php
 
 $reflecGeo = new ReflectionClass('Geolocation');
-$reflecGeoMethod = new ReflectionMethod('fromGeoPoints');
+$reflecGeoMethod = new ReflectionMethod(Geolocation::class, 'fromGeoPoints');
 
 $tests = [];
 

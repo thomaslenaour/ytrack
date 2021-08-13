@@ -46,7 +46,7 @@ In this class create a static method `fromGeoPoints` which will calculate the di
 
 The returned result will be a float with the distance in `kilometers`
 
-⚠ The result must be rounded off to two decimal places.
+⚠ The result must be rounded off to one decimal place.
 
 Example :
 
