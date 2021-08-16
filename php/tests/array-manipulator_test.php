@@ -17,7 +17,7 @@ $tabContains = ['Ok', 5, 5.4];
 
 $tests[] = static fn ($eq): bool => arrayContains($tabContains, 5.4);
 $tests[] = static fn ($eq): bool => arrayContains($tabContains, 'Ok');
-$tests[] = static fn ($eq): bool => arrayContains($tabContains, 'Nothing');
+$tests[] = static fn ($eq): bool => !arrayContains($tabContains, 'Nothing');
 
 $firstTab = ['firstTab'];
 $secondTab = ['secondTab', 'secondTabb'];
