@@ -3,7 +3,7 @@
 Install the .NET 5.0 framework here:
 https://dotnet.microsoft.com/download
 
-Create a repository named `piscine-csharp-discovery`
+Create a repository named `piscine-csharp`
 
 Once created, clone this repo, then get in the folder and run this command:
 
