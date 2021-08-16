@@ -1,6 +1,6 @@
 # Instructions
 
-Update the `Vehicule.cs` class with [this](Vehicule.cs) version.
+Update the `Vehicule.cs` class with [this](https://github.com/thomaslenaour/ytrack/blob/main/subjects/accelerate-and-brake/Vehicle.cs) version.
 
 What's happening ?! You can't build your program anymore 😦.
 
