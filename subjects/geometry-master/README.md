@@ -125,7 +125,7 @@ As mentioned above, an abstract class cannot have any objects, once we define th
 
 Create an abstract class named `AbstractGeometry` which will have the following abstract methods :
 
-- area() - calculate the air of the geometric shape
+- area() - calculate the area of the geometric shape
 - perimeter() - calculate the perimeter of the geometric shape
 
 Then create a class `Rectangle`,` Square` and `Triangle`.
