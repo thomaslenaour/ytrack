@@ -32,7 +32,7 @@ namespace TestCSharp
         static void Main()
         {
             var inputTab = new int[] { 1, 32, 7, 33 };
-            Console.WriteLine(DoubleArrayForEvenInteger_Exercice.DoubleArrayForEvenInteger(inputTab));
+            Console.WriteLine("{0}", string.Join(" ", DoubleArrayForEvenInteger_Exercice.DoubleArrayForEvenInteger(inputTab)));
         }
     }
 }
