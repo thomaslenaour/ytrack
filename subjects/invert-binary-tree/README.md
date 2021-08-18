@@ -61,6 +61,8 @@ Examples of uses :
  echo $invertedTree->right->value; // 2
 ```
 
+> Warning ! Your final code must not contain the `BinaryNode` class, it is purely for testing.
+
 ### Notions
 
-- [Binary tree](https://en.wikipedia.org/?title=Binary_tree)
+-   [Binary tree](https://en.wikipedia.org/?title=Binary_tree)
