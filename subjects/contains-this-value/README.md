@@ -23,7 +23,7 @@ Here is a possible Program.cs file to test your function :
 
 ```C#
 using System;
-using CSharpDiscovery.Quest01;
+using CSharpDiscovery.Quest02;
 
 namespace TestCSharp
 {
@@ -51,5 +51,5 @@ $
 
 # Notions
 
-- https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/statements/iteration-statements
-- https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/if-else
+-   https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/statements/iteration-statements
+-   https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/if-else
