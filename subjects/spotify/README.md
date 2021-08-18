@@ -64,6 +64,7 @@ No manufacturer is expected.
 This class should have the following methods :
 
 -   start() : start the program
+-   setContent(string) : sets the content to what is passed as parameter
 -   readLine(bool): read the contents of the output buffer
 -   write(string): write a new line with in the output buffer
 
