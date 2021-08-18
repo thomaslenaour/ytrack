@@ -16,10 +16,10 @@ To do this you will have to create the following classes :
 
 ---
 
-- `Song` :
-  - string artist
-  - string title
-  - string duration
+-   `Song` :
+    -   string artist
+    -   string title
+    -   string duration
 
 A constructor is expected.
 
@@ -27,16 +27,16 @@ Do what is necessary to be able to recover + modify all these properties.
 
 ---
 
-- `Playlist`
-  - array[Song] songs
-  - int totalMedias
+-   `Playlist`
+    -   array[Song] songs
+    -   int totalMedias
 
 No manufacturer is expected.
 
 Expected methods:
 
-- addMedia(Song) : will update the list of sounds + the total number of sounds.
-- __toString(): this method will return the following text
+-   addMedia(Song) : will update the list of sounds + the total number of sounds.
+-   \_\_toString(): this method will return the following text
 
 If we add 3 sounds :
 
@@ -63,9 +63,9 @@ No manufacturer is expected.
 
 This class should have the following methods :
 
-- start() : start the program
-- readLine(bool): read the contents of the output buffer
-- write(string): write a new line with in the output buffer
+-   start() : start the program
+-   readLine(bool): read the contents of the output buffer
+-   write(string): write a new line with in the output buffer
 
 Using the following code:
 
@@ -108,6 +108,8 @@ Songs added: 4
 Playlist length: 0h 13m 40s
 ```
 
+> Checking out the tester on Github will help you a lot !
+
 ### Notions
 
-- [Tampon de sortie](https://tutowebdesign.com/flux-sortie-php.php)
+-   [Tampon de sortie](https://tutowebdesign.com/flux-sortie-php.php)
