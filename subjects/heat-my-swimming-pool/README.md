@@ -63,15 +63,15 @@ We want to perform the function allowing the heating of a swimming pool to be tu
 
 Create an interface named `PoolTempsInterface` which will define the following functions :
 
-- getActualTemp() : Returns the current temperature.
-- getLastDaysTemps() : Returns the list of temperatures for the last 7 days.
-- setHeater(bool) : Turns the pool heating on or off according to the boolean.
+-   getActualTemp() : Returns the current temperature.
+-   getLastDaysTemps() : Returns the list of temperatures for the last 7 days.
+-   setHeater(bool) : Turns the pool heating on or off according to the boolean.
 
-Then create a class named `PoolTemps` which will implement the` PoolTempsInterface`.
+Then create a class named `PoolTemps` which will implement the` PoolTempsInterface` and a property `isActive`.
 Implement the different functions then create an `activateHeater` function which will trigger the heating if all the conditions are met :
 
-- The average temperature of the last 7 days is above 20 °
-- The current temperature is above 25 °
+-   The average temperature of the last 7 days is above 20 °
+-   The current temperature is above 25 °
 
 Examples of uses :
 
@@ -89,4 +89,4 @@ var_dump($poolTemps2->isActive); // true
 
 ### Notions
 
-- [OOP Interface](https://www.php.net/manual/en/language.oop5.interfaces.php)
+-   [OOP Interface](https://www.php.net/manual/en/language.oop5.interfaces.php)
