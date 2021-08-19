@@ -17,7 +17,7 @@ $tests[] = static fn ($eq): bool => $eq(count($reflectionRectangle->getPropertie
 $rectangle = new Rectangle(6, 3);
 
 $tests[] = static fn ($eq): bool => $eq($rectangle->area(),  18);
-$tests[] = static fn ($eq): bool => $eq($rectangle->perimeter(), 12);
+$tests[] = static fn ($eq): bool => $eq($rectangle->perimeter(), 18);
 
 $reflectionSquare = new ReflectionClass('Square');
 
