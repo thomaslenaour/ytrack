@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Create a `calc` function which will execute the calculation passed as a parameter.
+Create a `calc` function which will execute the calculation passed as a parameter and return an `int`.
 
 `calc` with the following available parameters:
 
