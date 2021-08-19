@@ -23,7 +23,7 @@ explodeWords('My name is John'); // ['My', 'name', 'is', 'John']
 
 explodeWords('My-name/is-John', '/'); // ['My-name', 'is-John']
 
-explodeWords('My-name/is-John/and-i-love-apple', '/', 2); // ['My-name', 'is-John', 'and-i-love-apple']
+explodeWords('My-name/is-John/and-i-love-apple', '/', 2); // ['My-name', 'is-John/and-i-love-apple']
 
 explodeWords('My-name/is-John/and-i-love-apple', '/', -1); // ['My-name', 'is-John']
 ```
