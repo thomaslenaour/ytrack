@@ -29,7 +29,7 @@ Example :
 // abstract class
 abstract class Vehicle {
   // abstract function mileage
-  abstract public function mileage() {}
+  abstract public function mileage();
 }
 ```
 
