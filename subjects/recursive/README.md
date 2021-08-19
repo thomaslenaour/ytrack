@@ -23,7 +23,7 @@ function recursive($arg1, $arg2, ...)
 
 ### Instructions
 
-Create a `factorial` function which calculates the factorial of the number passed as an argument.
+Create a `factorial` function which calculates and return the factorial of the number passed as an argument.
 
 `factorial` with the following available parameters:
 
