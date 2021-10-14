@@ -1,4 +1,4 @@
-## select-invoices-where-and
+## select-customers-where-and
 
 ### Instructions
 
