@@ -4,7 +4,7 @@
 
 A study is carried out on Americans customers.
 
-Your role is to list the first name `FirstName` and last name `LastName` of all Americans customers which have for `SupportRep` Peacock Jane.
+Your role is to list the first name `FirstName` and last name `LastName` of all Americans customers which have for `SupportRep` Tremblay François.
 
 ### Expected result
 
